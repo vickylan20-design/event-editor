@@ -1,0 +1,6263 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Noto+Sans+TC:wght@400;500;700;800&family=Noto+Serif+TC:wght@600;700&family=Rajdhani:wght@600;700&display=swap");
+
+:root {
+  font-family: "Noto Sans TC", Inter, system-ui, sans-serif;
+  color: #15181d;
+  background: #e5e9ef;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  color: inherit;
+}
+
+img {
+  display: block;
+}
+
+.builder-app {
+  --brand: #0f62fe;
+  --brand-2: #17a2b8;
+  --accent: #f6d927;
+  --ink: #121826;
+  --muted: #64748b;
+  --page: #ffffff;
+  --page-soft: #eef6f8;
+  --surface: #ffffff;
+  --line: #dde5ed;
+  --radius: 8px;
+  --heading: "Noto Sans TC", Inter, sans-serif;
+  --ui-scale: 1;
+  --section-pad-y: 28px;
+  --section-pad-x: max(42px, 8%);
+  --card-gap: 18px;
+  --card-weight: 700;
+  --copy-weight: 500;
+  --body-leading: 1.65;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 292px minmax(0, 1fr) 372px;
+}
+
+.kit-pulse .event-site,
+.kit-pulse .news-grid article,
+.kit-pulse .video-grid article,
+.kit-pulse .featured-video,
+.kit-pulse .gallery-grid button,
+.kit-pulse .athlete-grid article,
+.kit-pulse .ad-banner {
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 14px 34px rgba(25, 84, 216, 0.12);
+}
+
+.kit-pulse .news-grid h3,
+.kit-pulse .news-grid p,
+.kit-pulse .video-grid h3,
+.kit-pulse .video-grid p,
+.kit-pulse .featured-video h3,
+.kit-pulse .featured-video p {
+  padding-inline: 16px;
+}
+
+.kit-pulse .news-grid h3,
+.kit-pulse .video-grid h3,
+.kit-pulse .featured-video h3 {
+  margin-top: 14px;
+}
+
+.kit-pulse .news-grid p,
+.kit-pulse .video-grid p,
+.kit-pulse .featured-video p {
+  padding-bottom: 16px;
+}
+
+.kit-pulse .gallery-grid strong {
+  padding: 14px 16px 0;
+}
+
+.kit-pulse .gallery-grid span {
+  padding: 0 16px 16px;
+}
+
+.kit-pulse .athlete-grid div {
+  padding: 16px;
+}
+
+.kit-pulse .ad-banner {
+  border-color: transparent;
+}
+
+.kit-pulse .medal-section {
+  background:
+    radial-gradient(circle at 12% 8%, rgba(255, 224, 75, 0.34), transparent 18%),
+    radial-gradient(circle at 88% 0%, rgba(0, 184, 148, 0.18), transparent 24%),
+    #f4fbff;
+}
+
+.kit-pulse .medal-table {
+  border-collapse: separate;
+  border-spacing: 0 8px;
+  padding: 10px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 18px 42px rgba(7, 21, 72, 0.16);
+  overflow: visible;
+}
+
+.kit-pulse .medal-table th {
+  padding: 12px 14px;
+  background: #e91b54;
+  color: #fff;
+  font-size: 0.88rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.kit-pulse .medal-table th:first-child {
+  border-radius: 8px 0 0 8px;
+}
+
+.kit-pulse .medal-table th:last-child {
+  border-radius: 0 8px 8px 0;
+}
+
+.kit-pulse .medal-table td {
+  padding: 13px 14px;
+  border: 0;
+  background: #fff;
+  color: #111827;
+  font-weight: 800;
+  box-shadow: none;
+}
+
+.kit-pulse .medal-table td:first-child {
+  border-radius: 8px 0 0 8px;
+  color: #071548;
+  font-weight: 800;
+}
+
+.kit-pulse .medal-table td:nth-child(2) {
+  color: #1c1f2e;
+  font-size: 1.02rem;
+}
+
+.kit-pulse .medal-table td:last-child {
+  border-radius: 0 8px 8px 0;
+  background: #fff;
+  color: #071548;
+  font-size: 1.12rem;
+}
+
+.kit-pulse .medal-table tr:nth-child(even) td {
+  background: #fff;
+}
+
+.kit-pulse .medal-table tr:nth-child(even) td:last-child {
+  background: #fff;
+}
+
+.kit-pulse .medal-table tr:nth-child(4) td {
+  background: #fff;
+}
+
+.kit-pulse .medal-table tr:nth-child(4) td:last-child {
+  background: #fff;
+  color: #071548;
+}
+
+.kit-pulse .site-nav {
+  min-height: 66px;
+}
+
+.kit-pulse .site-nav div button {
+  min-height: 40px;
+  padding: 0 16px;
+}
+
+.kit-audi .event-site,
+.kit-audi .news-grid article,
+.kit-audi .gallery-grid button,
+.kit-audi .athlete-grid article,
+.kit-audi .ad-banner {
+  box-shadow: none;
+}
+
+.kit-audi .event-site {
+  border: 0;
+  background: #fff;
+  box-shadow: 0 28px 80px rgba(15, 23, 42, 0.12);
+}
+
+.kit-audi .site-nav,
+.kit-audi .event-footer {
+  background: #05070c;
+}
+
+.kit-audi .site-nav div button {
+  border-radius: 0;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.kit-audi .site-nav div button.is-active {
+  background: transparent;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.78);
+}
+
+.kit-vibe .event-site {
+  border: 0;
+  border-radius: 0;
+  background: #fff;
+  box-shadow: 0 22px 64px rgba(15, 23, 42, 0.1);
+}
+
+.kit-vibe .site-nav {
+  position: relative;
+  z-index: 3;
+  min-height: 68px;
+  margin-bottom: -68px;
+  background: transparent;
+  color: #fff;
+}
+
+.kit-vibe .site-nav div button {
+  min-height: 32px;
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 0.78rem;
+  font-weight: 400;
+}
+
+.kit-vibe .site-nav div button.is-active {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+
+.kit-spectrum .event-site {
+  background:
+    radial-gradient(circle at 14% 8%, rgba(197, 155, 128, 0.12), transparent 18%),
+    radial-gradient(circle at 88% 2%, rgba(197, 155, 128, 0.1), transparent 22%),
+    #f7f3f0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: 0 28px 80px rgba(37, 34, 31, 0.1);
+}
+
+.kit-spectrum .news-grid article,
+.kit-spectrum .gallery-grid button,
+.kit-spectrum .athlete-grid article {
+  background: transparent;
+}
+
+.kit-spectrum .site-nav {
+  min-height: 74px;
+  padding-inline: 42px;
+  background: #f7f3f0;
+  color: var(--ink);
+}
+
+.kit-spectrum .site-logo {
+  color: var(--ink);
+  font-family: var(--heading);
+  font-size: 1rem;
+}
+
+.kit-spectrum .site-logo img {
+  filter: brightness(0);
+}
+
+.kit-spectrum .site-nav div button {
+  color: var(--ink);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.kit-spectrum .site-nav div button.is-active {
+  background: var(--accent);
+  color: var(--ink);
+}
+
+.kit-spectrum .share-dots {
+  color: var(--ink);
+}
+
+.kit-aalto .event-site {
+  border: 0;
+  border-radius: 0;
+  background: #fff;
+}
+
+.kit-aalto .site-nav {
+  position: relative;
+  z-index: 5;
+  min-height: 74px;
+  margin-bottom: -74px;
+  padding-inline: 36px;
+  background: transparent;
+  color: #fff;
+}
+
+.kit-aalto .site-nav div button {
+  transform: none;
+  color: rgba(255, 255, 255, 0.78);
+  font-family: var(--heading);
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.kit-aalto .site-nav div button.is-active {
+  background: transparent;
+  color: #ef2319;
+  border-bottom: 2px solid #ef2319;
+}
+
+.kit-vibe {
+  --brand: #111111;
+  --brand-2: #4b5563;
+  --accent: #111111;
+  --ink: #111111;
+  --muted: #4f5660;
+  --page-soft: #ffffff;
+  --ui-scale: 1.22;
+  --section-pad-y: 82px;
+  --section-pad-x: max(64px, 9%);
+  --card-gap: 28px;
+  --card-weight: 500;
+  --copy-weight: 400;
+  --body-leading: 1.42;
+}
+
+.kit-pulse {
+  --brand: #1954d8;
+  --brand-2: #00b894;
+  --accent: #ffe04b;
+  --ink: #14233b;
+  --muted: #526274;
+  --page-soft: #edf8ff;
+  --radius: 18px;
+  --ui-scale: 1.08;
+  --section-pad-y: 34px;
+  --section-pad-x: max(44px, 8%);
+  --card-gap: 20px;
+  --card-weight: 800;
+  --copy-weight: 600;
+}
+
+.kit-audi {
+  --brand: #000000;
+  --brand-2: #6fd3d1;
+  --accent: #dce6e6;
+  --ink: #000000;
+  --muted: #555f66;
+  --page-soft: #f6f7f7;
+  --radius: 2px;
+  --heading: Inter, "Noto Sans TC", sans-serif;
+  --ui-scale: 0.94;
+  --section-pad-y: 34px;
+  --section-pad-x: max(52px, 8%);
+  --card-gap: 16px;
+  --card-weight: 500;
+  --copy-weight: 400;
+  font-weight: 400;
+}
+
+.kit-spectrum {
+  --brand: #c59b80;
+  --brand-2: #c59b80;
+  --accent: #ffffff;
+  --ink: #25221f;
+  --muted: #746f68;
+  --page-soft: #ffffff;
+  --heading: "Noto Serif TC", "Noto Sans TC", serif;
+  --ui-scale: 1.02;
+  --section-pad-y: 76px;
+  --section-pad-x: max(78px, 12%);
+  --card-gap: 34px;
+  --card-weight: 600;
+  --copy-weight: 400;
+  --body-leading: 1.85;
+}
+
+.kit-aalto {
+  --brand: #e4231b;
+  --brand-2: #08111f;
+  --accent: #f2c230;
+  --ink: #08111f;
+  --muted: #697180;
+  --page-soft: #f0f1ef;
+  --heading: Rajdhani, "Noto Sans TC", sans-serif;
+  --ui-scale: 1.08;
+  --section-pad-y: 30px;
+  --section-pad-x: max(38px, 7%);
+  --card-gap: 16px;
+  --card-weight: 800;
+  --copy-weight: 700;
+}
+
+.builder-sidebar,
+.inspector {
+  height: 100vh;
+  overflow: auto;
+  background: #fbfcfd;
+  border-color: #d5dde6;
+  border-style: solid;
+}
+
+.builder-sidebar {
+  padding: 18px;
+  border-width: 0 1px 0 0;
+}
+
+.brand-lockup {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 12px;
+  align-items: center;
+  padding-bottom: 18px;
+}
+
+.brand-lockup > span {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border-radius: var(--radius);
+  background: var(--brand);
+  color: #fff;
+  font-family: var(--heading);
+  font-weight: 800;
+  line-height: 1;
+}
+
+.brand-lockup strong,
+.group-heading h2,
+.inspector-header h2 {
+  display: block;
+  margin: 0;
+}
+
+.brand-lockup p,
+.group-heading p,
+.builder-topbar p,
+.inspector-header p {
+  margin: 4px 0 0;
+  color: #64748b;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.control-group {
+  padding: 18px 0;
+  border-top: 1px solid #e3e9ef;
+}
+
+.group-heading {
+  margin-bottom: 12px;
+}
+
+.group-heading h2 {
+  font-size: 1rem;
+}
+
+.style-grid,
+.page-list,
+.block-list {
+  display: grid;
+  gap: 8px;
+}
+
+.style-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.style-chip,
+.page-list button,
+.block-button,
+.primary-button,
+.secondary-button,
+.section-actions button,
+.more-button {
+  border: 1px solid #d7e0e8;
+  border-radius: var(--radius);
+  background: #fff;
+  cursor: pointer;
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    background 160ms ease;
+}
+
+.style-chip {
+  min-height: 64px;
+  display: grid;
+  gap: 2px;
+  padding: 9px;
+  text-align: left;
+}
+
+.style-chip span,
+.block-button span {
+  font-weight: 800;
+}
+
+.style-chip small,
+.block-button small {
+  color: #64748b;
+  font-size: 0.75rem;
+  line-height: 1.35;
+}
+
+.style-chip.is-active,
+.page-list button.is-active {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: #fff;
+}
+
+.style-chip.is-active small {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.page-list button {
+  min-height: 40px;
+  text-align: left;
+  padding: 0 12px;
+  font-weight: 700;
+}
+
+.page-row {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr) auto;
+  gap: 7px;
+  align-items: center;
+  padding: 7px;
+  border: 1px solid #d7e0e8;
+  border-radius: var(--radius);
+  background: #fff;
+}
+
+.page-row.is-active {
+  border-color: var(--brand);
+  box-shadow: inset 3px 0 0 var(--brand);
+}
+
+.page-select {
+  display: grid;
+  width: 28px;
+  height: 28px;
+  min-height: 0;
+  place-items: center;
+  padding: 0;
+  border-radius: 999px;
+  background: #eef2f7;
+}
+
+.page-select::before {
+  color: var(--brand);
+  content: "›";
+  font-size: 1.2rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.page-row.is-active .page-select {
+  background: var(--brand);
+}
+
+.page-row.is-active .page-select::before {
+  color: #fff;
+}
+
+.page-row input {
+  min-width: 0;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  font-weight: 800;
+  outline: none;
+}
+
+.page-delete {
+  min-height: 28px;
+  padding: 0 8px;
+  color: #dc2626;
+  font-size: 0.75rem;
+}
+
+.page-delete:disabled {
+  color: #94a3b8;
+  cursor: not-allowed;
+}
+
+.add-page-button {
+  position: relative;
+  display: flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 11px;
+  color: var(--brand);
+  font-weight: 800;
+}
+
+.add-page-button strong {
+  display: grid;
+  width: 24px;
+  height: 24px;
+  place-items: center;
+  border-radius: 999px;
+  background: var(--brand);
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.block-button {
+  position: relative;
+  display: grid;
+  gap: 3px;
+  width: 100%;
+  padding: 11px 42px 11px 11px;
+  text-align: left;
+}
+
+.block-button strong {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  display: grid;
+  width: 24px;
+  height: 24px;
+  place-items: center;
+  border-radius: 999px;
+  background: var(--brand);
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 1;
+  transform: translateY(-50%);
+}
+
+.style-chip:hover,
+.page-list button:hover,
+.block-button:hover,
+.section-actions button:hover {
+  transform: translateY(-1px);
+  border-color: var(--brand);
+}
+
+.preview-stage {
+  min-width: 0;
+  height: 100vh;
+  overflow: auto;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.8), transparent 320px),
+    #dfe6ee;
+}
+
+.builder-topbar {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  display: flex;
+  min-height: 78px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 15px 24px;
+  background: rgba(248, 250, 252, 0.9);
+  border-bottom: 1px solid #d5dde6;
+  backdrop-filter: blur(14px);
+}
+
+.builder-topbar h1 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.topbar-actions button {
+  white-space: nowrap;
+}
+
+.preview-menu {
+  position: relative;
+}
+
+.preview-menu-trigger::after {
+  margin-left: 8px;
+  content: "▾";
+  font-size: 0.72rem;
+}
+
+.preview-menu-panel {
+  position: absolute;
+  z-index: 30;
+  top: calc(100% + 8px);
+  right: 0;
+  display: grid;
+  width: 220px;
+  gap: 6px;
+  padding: 8px;
+  border: 1px solid #d7e0e8;
+  border-radius: var(--radius);
+  background: #fff;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.16);
+}
+
+.preview-menu-panel button {
+  display: grid;
+  gap: 2px;
+  width: 100%;
+  min-height: 52px;
+  padding: 8px 10px;
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  text-align: left;
+}
+
+.preview-menu-panel button:hover {
+  background: #f1f5f9;
+}
+
+.preview-menu-panel span {
+  font-weight: 800;
+}
+
+.preview-menu-panel small {
+  color: #64748b;
+  font-size: 0.72rem;
+}
+
+.save-status {
+  color: #64748b;
+  font-size: 0.78rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.save-status::before {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 7px;
+  border-radius: 999px;
+  background: #22c55e;
+  content: "";
+}
+
+.save-status.is-dirty::before {
+  background: #f59e0b;
+}
+
+.save-status.is-error {
+  color: #dc2626;
+}
+
+.save-status.is-error::before {
+  background: #dc2626;
+}
+
+.primary-button {
+  min-height: 42px;
+  padding: 0 16px;
+  background: var(--ink);
+  border-color: var(--ink);
+  color: #fff;
+  font-weight: 800;
+}
+
+.secondary-button {
+  min-height: 42px;
+  padding: 0 14px;
+  background: #fff;
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.page-preview {
+  padding: 26px;
+}
+
+.preview-only.builder-app {
+  display: block;
+  min-height: 100vh;
+  background: var(--page);
+}
+
+.preview-toolbar {
+  position: sticky;
+  z-index: 50;
+  top: 0;
+  display: flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 14px;
+  background: rgba(15, 23, 42, 0.9);
+  color: #fff;
+  font-family: Inter, "Noto Sans TC", sans-serif;
+  backdrop-filter: blur(12px);
+}
+
+.preview-toolbar div {
+  display: flex;
+  min-width: 0;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.preview-toolbar strong,
+.preview-toolbar span {
+  white-space: nowrap;
+}
+
+.preview-toolbar strong {
+  font-size: 0.82rem;
+}
+
+.preview-toolbar span {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.72rem;
+}
+
+.preview-toolbar button {
+  min-height: 28px;
+  padding: 0 10px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.preview-only-canvas {
+  min-height: calc(100vh - 44px);
+  background: var(--page);
+}
+
+.preview-only .event-site {
+  max-width: none;
+  min-height: calc(100vh - 44px);
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.preview-only .preview-section {
+  cursor: default;
+}
+
+.preview-only .preview-section.is-selected {
+  outline-color: transparent;
+}
+
+.event-site {
+  max-width: 1180px;
+  min-height: 880px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: var(--page);
+  border: 1px solid rgba(15, 23, 42, 0.14);
+  border-radius: var(--radius);
+  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.16);
+}
+
+.site-nav {
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  align-items: center;
+  gap: 16px;
+  min-height: 58px;
+  padding: 0 18px;
+  background:
+    linear-gradient(135deg, var(--brand), #1641b8 58%, #3620a4),
+    var(--brand);
+  color: #fff;
+}
+
+.site-logo {
+  display: inline-grid;
+  width: 92px;
+  min-height: 32px;
+  place-items: center start;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.site-logo img {
+  display: block;
+  width: 92px;
+  height: auto;
+  filter: none;
+}
+
+.site-nav div {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.site-nav div button {
+  min-height: 34px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.82);
+  font-weight: 800;
+}
+
+.site-nav div button.is-active {
+  background: #fff;
+  color: var(--brand);
+}
+
+.share-dots {
+  justify-self: end;
+  font-size: 0.82rem;
+  font-weight: 800;
+  opacity: 0.9;
+}
+
+.preview-section {
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+}
+
+.preview-section.is-selected {
+  outline-color: var(--accent);
+}
+
+.event-hero {
+  position: relative;
+  min-height: 156px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent 42%),
+    radial-gradient(circle at 12% 50%, rgba(255, 255, 255, 0.18), transparent 22%),
+    linear-gradient(90deg, var(--brand), #1749bf 58%, #4623b6);
+  color: #fff;
+}
+
+.event-hero.is-page-hero {
+  min-height: 280px;
+  place-items: center start;
+  padding: 74px max(42px, 8%) 46px;
+}
+
+.event-hero.is-page-hero .hero-athletes img {
+  opacity: 0.22;
+}
+
+.event-hero.is-page-hero .hero-title {
+  max-width: 720px;
+  text-align: left;
+}
+
+.event-hero.is-page-hero .hero-title h2 {
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+}
+
+.event-hero.is-page-hero .hero-title p {
+  margin-top: 8px;
+}
+
+.kit-pulse .event-hero {
+  min-height: 178px;
+}
+
+.kit-pulse .event-hero.is-page-hero {
+  min-height: 280px;
+}
+
+.kit-pulse .event-hero.is-home-hero.has-countdown,
+.kit-spectrum .event-hero.is-home-hero.has-countdown {
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
+  place-items: end start;
+  align-items: end;
+  gap: 32px;
+  min-height: 460px;
+  padding: 64px max(56px, 8%);
+}
+
+.kit-vibe .event-hero.is-home-hero {
+  min-height: 500px;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
+  place-items: end start;
+  align-items: end;
+  gap: 34px;
+  padding: 0 max(42px, 4%) 72px;
+  background: #111;
+}
+
+.kit-vibe .event-hero.is-home-hero::before {
+  z-index: 1;
+  opacity: 1;
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.18) 58%, rgba(0, 0, 0, 0.02)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.28), transparent 40%);
+}
+
+.kit-vibe .event-hero.is-home-hero .hero-athletes {
+  grid-template-columns: 1fr;
+}
+
+.kit-vibe .event-hero.is-home-hero .hero-athletes img {
+  display: none;
+}
+
+.kit-vibe .event-hero.is-home-hero .hero-athletes img:first-child {
+  display: block;
+  opacity: 1;
+  mix-blend-mode: normal;
+  filter: saturate(0.88) contrast(1.02);
+}
+
+.kit-vibe .event-hero.is-home-hero .hero-title {
+  max-width: 840px;
+  text-align: left;
+  text-shadow: none;
+}
+
+.kit-vibe .event-hero.is-home-hero .hero-title span {
+  padding: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 0.92rem;
+  font-weight: 400;
+}
+
+.kit-vibe .event-hero.is-home-hero .hero-title h2 {
+  margin-top: 22px;
+  color: #fff;
+  font-size: 68px;
+  font-weight: 400;
+  line-height: 0.96;
+  letter-spacing: 0;
+}
+
+.kit-vibe .event-hero.is-home-hero .hero-title p {
+  max-width: 300px;
+  margin-top: 22px;
+  margin-left: 0;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.94rem;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+.kit-audi .event-hero.is-home-hero {
+  min-height: 360px;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
+  justify-items: start;
+  align-items: center;
+  gap: 34px;
+  padding: 60px max(52px, 8%);
+  background:
+    radial-gradient(circle at 78% 90%, rgba(117, 215, 210, 0.88), transparent 22%),
+    radial-gradient(circle at 54% 88%, rgba(165, 236, 222, 0.6), transparent 26%),
+    linear-gradient(180deg, #05060d 0%, #10131d 56%, #bcebea 100%);
+}
+
+.kit-audi .event-hero.is-home-hero::before,
+.kit-audi .event-hero.is-home-hero .hero-athletes {
+  display: none;
+}
+
+.kit-audi .event-hero.is-home-hero .hero-title {
+  max-width: 620px;
+  text-align: left;
+  text-shadow: none;
+}
+
+.kit-audi .event-hero.is-home-hero .hero-title span {
+  background: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 0.72rem;
+  font-weight: 400;
+}
+
+.kit-spectrum .event-hero {
+  min-height: 420px;
+  background:
+    radial-gradient(circle at 88% 18%, rgba(197, 155, 128, 0.16), transparent 18%),
+    linear-gradient(135deg, #f7f3f0 0%, #ffffff 100%);
+}
+
+.kit-spectrum .event-hero::before {
+  opacity: 0.28;
+  background:
+    linear-gradient(120deg, rgba(255, 255, 255, 0.28), transparent 46%),
+    repeating-radial-gradient(circle at 24% 18%, rgba(37, 34, 31, 0.08) 0 1px, transparent 1px 6px);
+}
+
+.kit-spectrum .event-hero.is-home-hero .hero-athletes {
+  display: none;
+}
+
+.kit-spectrum .event-hero.is-home-hero .hero-title {
+  max-width: 720px;
+  margin-inline: auto;
+  text-align: center;
+  text-shadow: none;
+}
+
+.kit-spectrum .event-hero.is-home-hero .hero-title span {
+  background: transparent;
+  color: var(--ink);
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+.kit-spectrum .event-hero.is-home-hero .hero-title h2 {
+  margin-top: 22px;
+  color: var(--brand);
+  font-size: 68px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.08;
+}
+
+.kit-spectrum .event-hero.is-home-hero .hero-title p {
+  width: fit-content;
+  margin: 34px 0 0;
+  color: var(--muted);
+  font-family: "Noto Sans TC", Inter, sans-serif;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.kit-spectrum .event-hero.is-home-hero.has-countdown .hero-title {
+  margin-inline: 0;
+  text-align: left;
+}
+
+.kit-spectrum .event-hero.is-home-hero.has-countdown .hero-title h2 {
+  max-width: 720px;
+}
+
+.kit-spectrum .event-hero.is-home-hero .hero-countdown-widget {
+  align-self: center;
+  background: rgba(247, 243, 240, 0.86);
+  border: 1px solid rgba(37, 34, 31, 0.16);
+  color: var(--ink);
+  box-shadow: none;
+}
+
+.kit-spectrum .hero-countdown-widget > span {
+  color: var(--muted);
+  font-size: 0.64rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.kit-spectrum .hero-countdown-widget strong {
+  color: var(--ink);
+  font-style: italic;
+}
+
+.kit-spectrum .hero-countdown-widget small {
+  color: var(--muted);
+}
+
+.kit-pulse .event-hero.is-home-hero,
+.kit-spectrum .event-hero.is-home-hero {
+  grid-template-columns: 1fr;
+  place-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 24px;
+  text-align: center;
+}
+
+.kit-pulse .event-hero.is-home-hero.has-countdown,
+.kit-spectrum .event-hero.is-home-hero.has-countdown {
+  grid-template-columns: 1fr;
+  place-items: center;
+  align-items: center;
+  min-height: 460px;
+}
+
+.kit-pulse .event-hero.is-home-hero .hero-title,
+.kit-spectrum .event-hero.is-home-hero .hero-title,
+.kit-spectrum .event-hero.is-home-hero.has-countdown .hero-title {
+  max-width: 760px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.kit-pulse .event-hero.is-home-hero .hero-title p,
+.kit-spectrum .event-hero.is-home-hero .hero-title p {
+  margin-inline: auto;
+}
+
+.kit-pulse .event-hero.is-home-hero .hero-countdown-widget,
+.kit-spectrum .event-hero.is-home-hero .hero-countdown-widget {
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+
+.kit-pulse .event-hero.is-home-hero {
+  min-height: 460px;
+  height: auto;
+}
+
+.kit-pulse .event-hero.is-home-hero.has-countdown {
+  min-height: 460px;
+  height: auto;
+}
+
+.kit-pulse .event-hero.is-home-hero .hero-title h2 {
+  color: #fff;
+}
+
+.kit-spectrum .event-hero.is-page-hero {
+  min-height: 280px;
+}
+
+.kit-spectrum .event-hero.is-page-hero .hero-title h2 {
+  color: var(--brand);
+  font-style: italic;
+}
+
+.kit-aalto .event-hero.is-home-hero {
+  min-height: 700px;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 380px);
+  place-items: end start;
+  align-items: end;
+  gap: 42px;
+  padding: 0 max(52px, 6%) 120px;
+  background:
+    radial-gradient(circle at 62% 58%, rgba(239, 35, 25, 0.22), transparent 18%),
+    linear-gradient(90deg, rgba(4, 9, 16, 0.98), rgba(4, 9, 16, 0.7) 48%, rgba(4, 9, 16, 0.42)),
+    #050b16;
+  transform: none;
+}
+
+.kit-aalto .event-hero.is-home-hero > * {
+  transform: none;
+}
+
+.kit-aalto .event-hero.is-home-hero::before {
+  display: block;
+  opacity: 1;
+  background:
+    linear-gradient(180deg, rgba(5, 11, 22, 0.04), rgba(5, 11, 22, 0.82)),
+    linear-gradient(90deg, rgba(5, 11, 22, 0.98), transparent 56%),
+    radial-gradient(circle at 82% 28%, rgba(239, 35, 25, 0.2), transparent 26%);
+}
+
+.kit-aalto .event-hero.is-home-hero::after {
+  content: "SPORT";
+  position: absolute;
+  left: max(28px, 3%);
+  bottom: -34px;
+  z-index: 1;
+  color: rgba(255, 255, 255, 0.08);
+  font-family: var(--heading);
+  font-size: clamp(8rem, 19vw, 18rem);
+  font-weight: 800;
+  line-height: 0.75;
+  letter-spacing: 0;
+}
+
+.kit-aalto .event-hero.is-home-hero .hero-athletes {
+  grid-template-columns: 1fr;
+}
+
+.kit-aalto .event-hero.is-home-hero .hero-athletes img {
+  display: none;
+}
+
+.kit-aalto .event-hero.is-home-hero .hero-athletes img:nth-child(3) {
+  display: block;
+  opacity: 0.74;
+  mix-blend-mode: normal;
+  filter: saturate(0.72) contrast(1.18);
+  object-position: 64% center;
+}
+
+.kit-aalto .event-hero.is-home-hero .hero-title {
+  max-width: 620px;
+  text-align: left;
+  text-shadow: none;
+}
+
+.kit-aalto .event-hero.is-home-hero .hero-title span {
+  background: transparent;
+  color: #ef2319;
+  font-family: var(--heading);
+  font-size: 0.95rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.event-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.18;
+  background:
+    repeating-linear-gradient(135deg, transparent 0 38px, rgba(255, 255, 255, 0.42) 38px 40px),
+    radial-gradient(circle at 75% 28%, var(--accent), transparent 13%);
+}
+
+.hero-title {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.24);
+}
+
+.hero-title span {
+  display: inline-block;
+  padding: 3px 10px;
+  background: var(--accent);
+  color: #0f172a;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.hero-title h2 {
+  margin: 4px 0 0;
+  font-family: var(--heading);
+  font-size: calc(3.9rem * var(--ui-scale));
+  line-height: 0.95;
+  letter-spacing: 0;
+  white-space: pre-line;
+}
+
+.hero-title p {
+  margin: 4px 0 0;
+  font-weight: 800;
+}
+
+.kit-audi .hero-title h2 {
+  max-width: 520px;
+  color: #fff;
+  font-size: 3.7rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.02;
+}
+
+.kit-audi .hero-title p {
+  max-width: 440px;
+  color: rgba(255, 255, 255, 0.74);
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.kit-spectrum .hero-title h2 {
+  line-height: 1.08;
+}
+
+.kit-aalto .event-hero.is-home-hero .hero-title h2 {
+  margin-top: 12px;
+  font-size: clamp(4.3rem, 7vw, 6.8rem);
+  text-transform: uppercase;
+  text-shadow: 0 10px 24px rgba(0, 0, 0, 0.34);
+}
+
+.kit-aalto .event-hero.is-home-hero .hero-title p {
+  max-width: 430px;
+  margin-top: 18px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.hero-athletes {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  pointer-events: none;
+}
+
+.hero-athletes img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.34;
+  mix-blend-mode: screen;
+}
+
+.hero-mobile-logo {
+  display: none;
+}
+
+.event-hero.has-custom-bg .hero-athletes {
+  display: block;
+}
+
+.event-hero.has-custom-bg .hero-athletes .hero-placeholder-bg {
+  display: none;
+}
+
+.event-hero.has-custom-bg .hero-athletes .hero-custom-bg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  mix-blend-mode: normal;
+  filter: none;
+  object-fit: cover;
+}
+
+.hero-mobile-bg {
+  display: none;
+}
+
+.race-hero-side,
+.race-action-rail,
+.hero-countdown-widget {
+  display: none;
+}
+
+.event-hero.is-home-hero .hero-countdown-widget {
+  position: relative;
+  right: auto;
+  top: auto;
+  z-index: 4;
+  align-self: end;
+  justify-self: end;
+  display: grid;
+  width: min(360px, 100%);
+  gap: 12px;
+  padding: 18px 20px;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--ink);
+  box-shadow: 0 16px 36px rgba(5, 11, 22, 0.18);
+  transform: none;
+}
+
+.hero-countdown-widget > span {
+  color: var(--muted);
+  font-size: 0.84rem;
+  font-weight: 800;
+}
+
+.hero-countdown-widget div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.hero-countdown-widget strong {
+  display: grid;
+  color: var(--brand);
+  font-family: var(--heading);
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.hero-countdown-widget small {
+  margin-top: 6px;
+  color: var(--muted);
+  font-family: "Noto Sans TC", Inter, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+}
+
+.hero-countdown-widget p {
+  margin: 0;
+  font-family: var(--heading);
+  font-size: 1.08rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.event-hero.has-countdown .race-hero-side {
+  display: none;
+}
+
+.kit-pulse .event-hero.is-home-hero .hero-countdown-widget {
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 16px 34px rgba(25, 84, 216, 0.16);
+}
+
+.kit-vibe .event-hero.is-home-hero .hero-countdown-widget {
+  background: rgba(0, 0, 0, 0.18);
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.72);
+  box-shadow: none;
+}
+
+.kit-vibe .hero-countdown-widget > span,
+.kit-vibe .hero-countdown-widget small {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.kit-vibe .hero-countdown-widget strong {
+  color: #fff;
+}
+
+.kit-audi .event-hero.is-home-hero .hero-countdown-widget {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  box-shadow: none;
+}
+
+.kit-spectrum .event-hero.is-home-hero .hero-countdown-widget {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(34, 34, 34, 0.16);
+  box-shadow: none;
+}
+
+.kit-aalto .event-hero.is-home-hero .hero-countdown-widget {
+  width: min(380px, 100%);
+  background: #091220;
+  color: #fff;
+  box-shadow: 0 18px 40px rgba(3, 10, 22, 0.32);
+}
+
+.kit-aalto .hero-countdown-widget > span {
+  color: #ef2319;
+  font-family: var(--heading);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.kit-aalto .hero-countdown-widget strong {
+  color: #ef2319;
+  font-size: 2.7rem;
+}
+
+.kit-aalto .hero-countdown-widget small {
+  color: rgba(255, 255, 255, 0.58);
+}
+
+.kit-aalto .race-hero-side {
+  position: absolute;
+  right: max(42px, 6%);
+  top: 196px;
+  z-index: 3;
+  display: grid;
+  width: min(300px, 28%);
+  gap: 14px;
+  color: #fff;
+}
+
+.kit-aalto .race-hero-side h3 {
+  margin: 0;
+  font-family: var(--heading);
+  font-size: 1.3rem;
+}
+
+.kit-aalto .race-hero-side img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  filter: saturate(0.78) contrast(1.08);
+}
+
+.kit-aalto .race-hero-side p {
+  margin: 0;
+  max-width: 260px;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: var(--heading);
+  font-size: 1.45rem;
+  font-weight: 700;
+  line-height: 1.08;
+}
+
+.kit-aalto .race-action-rail {
+  position: absolute;
+  right: 0;
+  top: 280px;
+  z-index: 4;
+  display: grid;
+}
+
+.kit-aalto .race-action-rail span {
+  display: grid;
+  width: 58px;
+  height: 58px;
+  place-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+  background: #ef2319;
+  color: #fff;
+  font-family: var(--heading);
+  font-weight: 800;
+}
+
+.event-hero.is-page-hero .race-hero-side,
+.event-hero.is-page-hero .race-action-rail {
+  display: none;
+}
+
+.kit-vibe .event-hero.is-page-hero {
+  min-height: 280px;
+  padding-bottom: 46px;
+  background: #111;
+}
+
+.kit-vibe .event-hero.is-page-hero .hero-title h2 {
+  color: #fff;
+  font-size: 42px;
+  font-weight: 400;
+}
+
+.kit-vibe .event-hero.is-page-hero .hero-title span,
+.kit-vibe .event-hero.is-page-hero .hero-title p {
+  color: rgba(255, 255, 255, 0.78);
+  background: transparent;
+  font-weight: 400;
+}
+
+.kit-audi .event-hero.is-page-hero {
+  min-height: 280px;
+  background:
+    radial-gradient(circle at 86% 90%, rgba(117, 215, 210, 0.65), transparent 22%),
+    linear-gradient(180deg, #05060d 0%, #10131d 100%);
+}
+
+.kit-audi .event-hero.is-page-hero::before,
+.kit-audi .event-hero.is-page-hero .hero-athletes {
+  display: none;
+}
+
+.kit-audi .event-hero.is-page-hero .hero-title h2 {
+  color: #fff;
+  font-size: 2.7rem;
+  font-weight: 400;
+}
+
+.kit-aalto .event-hero.is-page-hero {
+  min-height: 280px;
+  padding-bottom: 46px;
+  background:
+    linear-gradient(90deg, rgba(4, 9, 16, 0.98), rgba(4, 9, 16, 0.68)),
+    #050b16;
+}
+
+.kit-aalto .event-hero.is-page-hero::after {
+  content: "";
+}
+
+.kit-aalto .event-hero.is-page-hero .hero-title h2 {
+  color: #fff;
+  font-size: 3.1rem;
+  text-transform: uppercase;
+}
+
+.kit-aalto .event-hero.is-page-hero .hero-title span {
+  background: transparent;
+  color: #ef2319;
+}
+
+.ad-banner {
+  display: block;
+  width: 970px;
+  max-width: 970px;
+  height: 250px;
+  margin: 18px auto;
+  background: transparent;
+  border: 0;
+}
+
+.score-section {
+  padding: 34px max(42px, 6%);
+  background: #eef1f3;
+}
+
+.score-section-header {
+  max-width: 1080px;
+  margin: 0 auto 24px;
+}
+
+.score-section-header span {
+  color: var(--brand);
+  font-weight: 800;
+  font-size: 0.82rem;
+}
+
+.score-section-header h2 {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--heading);
+  font-size: 2rem;
+}
+
+.match-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.score-carousel {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.match-card {
+  display: grid;
+  place-items: center;
+  min-height: 142px;
+  padding: 18px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+}
+
+.match-card time,
+.match-card p,
+.match-card small {
+  color: var(--muted);
+}
+
+.match-card time {
+  font-size: 0.82rem;
+}
+
+.match-scoreline {
+  display: grid;
+  grid-template-columns: 48px 1fr 48px;
+  gap: 12px;
+  align-items: center;
+  margin-top: 8px;
+  width: 100%;
+}
+
+.match-scoreline span {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border-radius: 999px;
+  background: #f4f6f8;
+  font-size: 1.8rem;
+}
+
+.match-scoreline strong {
+  color: var(--ink);
+  font-family: var(--heading);
+  font-size: 1.55rem;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.match-card p {
+  margin: 8px 0 0;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.match-card small {
+  font-size: 0.76rem;
+}
+
+.score-cta {
+  display: block;
+  min-width: 150px;
+  min-height: 38px;
+  margin: 24px auto 0;
+  padding: 0 20px;
+  border: 1px solid var(--brand);
+  border-radius: var(--radius);
+  background: var(--brand);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.kit-spectrum .score-section-header span {
+  color: var(--brand);
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.kit-spectrum .score-section-header h2 {
+  color: var(--brand);
+  font-family: var(--heading);
+  font-size: 2.8rem;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.kit-spectrum .match-card {
+  background: #f7f3f0;
+  border: 1px solid rgba(37, 34, 31, 0.12);
+  box-shadow: none;
+}
+
+.kit-spectrum .match-scoreline span {
+  background: #ffffff;
+}
+
+.kit-spectrum .match-scoreline strong {
+  color: var(--ink);
+  font-style: italic;
+}
+
+.kit-spectrum .score-cta,
+.kit-spectrum .more-button {
+  border: 1px solid rgba(37, 34, 31, 0.16);
+  border-radius: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.kit-spectrum .content-section.taiwan-medals-section,
+.kit-spectrum .content-section.taiwan-medals-section,
+.kit-spectrum .content-section.taiwan-medals-section,
+.kit-spectrum .taiwan-medals-section {
+  background: #ffffff;
+}
+
+.kit-spectrum .taiwan-medal-card {
+  background: #f7f3f0;
+  color: var(--ink);
+  border: 1px solid rgba(37, 34, 31, 0.12);
+  box-shadow: none;
+}
+
+.kit-spectrum .taiwan-medal-card.gold {
+  background: #f7f3f0;
+}
+
+.kit-spectrum .taiwan-medal-card strong {
+  color: var(--ink);
+  font-style: italic;
+  font-weight: 600;
+}
+
+.kit-spectrum .medal-table th {
+  color: var(--ink);
+  font-family: var(--heading);
+  font-style: italic;
+}
+
+.kit-spectrum .medal-table td {
+  background: #f7f3f0;
+}
+
+.kit-spectrum .medal-table tr:nth-child(even) td {
+  background: #ffffff;
+}
+
+.kit-spectrum .medal-table tr:nth-child(4) td {
+  background: #ffffff;
+}
+
+.kit-pulse .ad-banner {
+  overflow: hidden;
+}
+
+.kit-audi .ad-banner {
+  border-width: 0;
+  background: #f6f7f7;
+}
+
+.kit-spectrum .ad-banner {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  background: #f7f3f0;
+}
+
+.kit-aalto .ad-banner {
+  background: #f1f2f1;
+  border: 0;
+  box-shadow: none;
+}
+
+.kit-aalto .content-section,
+.kit-aalto .text-block {
+  background: #fff;
+}
+
+.kit-aalto .content-section:nth-child(even),
+.kit-aalto .video-section {
+  background: #f1f2f1;
+}
+
+.kit-aalto .score-section {
+  margin-top: 0;
+  padding-top: 46px;
+  padding-bottom: 62px;
+  background: #e7e9e8;
+}
+
+.kit-aalto .score-section {
+  padding-top: 18px;
+}
+
+.kit-aalto .score-section-header {
+  margin-inline: max(42px, 6%);
+}
+
+.kit-aalto .score-section-header span {
+  color: #ef2319;
+  font-family: var(--heading);
+  letter-spacing: 0.12em;
+}
+
+.kit-aalto .score-section-header h2 {
+  color: #07111f;
+  font-size: 2.6rem;
+  text-transform: uppercase;
+}
+
+.kit-aalto .match-card-grid {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 22px;
+  max-width: none;
+  margin-inline: max(42px, 6%);
+}
+
+.kit-aalto .match-card {
+  min-height: 142px;
+  background: #fff;
+  border: 0;
+  box-shadow: 0 12px 28px rgba(5, 11, 22, 0.08);
+}
+
+.kit-aalto .match-scoreline strong {
+  color: #050b16;
+  font-size: 2rem;
+}
+
+.kit-aalto .match-scoreline span {
+  background: #f1f3f4;
+}
+
+.kit-aalto .score-cta {
+  border-color: #ef2319;
+  background: #ef2319;
+  color: #fff;
+  font-family: var(--heading);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.ad-banner img {
+  display: block;
+  width: 970px;
+  max-width: 970px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.ad-banner div,
+.ad-banner span,
+.ad-banner h2,
+.ad-banner p,
+.ad-banner a {
+  display: none;
+}
+
+.content-section,
+.text-block {
+  padding: var(--section-pad-y) var(--section-pad-x);
+}
+
+.content-section:nth-child(even) {
+  background: var(--page-soft);
+}
+
+.kit-vibe .content-section,
+.kit-vibe .content-section:nth-child(even),
+.kit-vibe .text-block {
+  background: #fff;
+}
+
+.kit-vibe .content-section,
+.kit-vibe .text-block {
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.section-title {
+  display: grid;
+  place-items: center;
+  margin-bottom: calc(22px * var(--ui-scale));
+}
+
+.section-title span {
+  display: none;
+}
+
+.section-title h2 {
+  margin: 6px 0 0;
+  color: var(--brand);
+  font-family: var(--heading);
+  font-size: calc(1.28rem * var(--ui-scale));
+  font-weight: var(--card-weight);
+  letter-spacing: 0;
+  white-space: pre-line;
+}
+
+.kit-vibe .section-title {
+  place-items: start;
+  margin-bottom: 54px;
+}
+
+.kit-vibe .section-title span {
+  width: 0;
+  height: 0;
+}
+
+.kit-vibe .section-title h2 {
+  max-width: 900px;
+  color: #111;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.kit-audi .section-title {
+  place-items: start;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+.kit-audi .section-title span {
+  width: 36px;
+  height: 1px;
+  border-radius: 0;
+  background: #000;
+}
+
+.kit-audi .section-title h2 {
+  max-width: 360px;
+  color: #111;
+  font-size: 1.72rem;
+  font-weight: 400;
+  line-height: 1.12;
+}
+
+.kit-audi .score-section {
+  padding: var(--section-pad-y) var(--section-pad-x);
+  background: #fff;
+}
+
+.kit-audi .score-section-header {
+  display: grid;
+  place-items: start;
+  max-width: 1000px;
+  margin: 0 auto 24px;
+}
+
+.kit-audi .score-section-header span {
+  display: none;
+}
+
+.kit-audi .score-section-header h2 {
+  max-width: 360px;
+  margin: 6px 0 0;
+  color: #111;
+  font-family: var(--heading);
+  font-size: 1.72rem;
+  font-weight: 400;
+  line-height: 1.12;
+}
+
+.kit-audi .content-section,
+.kit-audi .text-block {
+  background: #fff;
+}
+
+.kit-audi .content-section:nth-child(even) {
+  background: #fff;
+}
+
+.kit-audi .video-section,
+.kit-audi .medal-section,
+.kit-audi .taiwan-medals-section {
+  background: #f6f7f7;
+}
+
+.kit-spectrum .section-title {
+  place-items: start;
+  margin-bottom: 46px;
+}
+
+.kit-spectrum .section-title span {
+  width: 0;
+  height: 0;
+}
+
+.kit-spectrum .section-title h2 {
+  max-width: 620px;
+  color: var(--brand);
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.08;
+}
+
+.kit-spectrum .content-section,
+.kit-spectrum .text-block {
+  background: #f7f3f0;
+}
+
+.kit-spectrum .content-section:nth-child(even),
+.kit-spectrum .video-section,
+.kit-spectrum .medal-section {
+  background: #ffffff;
+}
+
+.kit-spectrum .score-section {
+  background: #ffffff;
+}
+
+.kit-aalto .section-title span {
+  width: 46px;
+  height: 4px;
+  border-radius: 0;
+  background: #ef2319;
+  transform: none;
+}
+
+.kit-aalto .section-title h2 {
+  color: #07111f;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+}
+
+.kit-aalto .medal-section .section-title h2 {
+  color: #fff;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--card-gap);
+}
+
+.news-grid article,
+.athlete-grid article {
+  background: var(--surface);
+}
+
+.news-grid h3,
+.news-grid p {
+  padding-inline: 16px;
+}
+
+.news-grid p {
+  padding-bottom: 16px;
+}
+
+.news-grid img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.kit-vibe .news-grid,
+.kit-vibe .gallery-grid,
+.kit-vibe .athlete-grid,
+.kit-vibe .video-grid {
+  gap: 26px;
+}
+
+.kit-vibe .news-grid article,
+.kit-vibe .video-grid article,
+.kit-vibe .featured-video,
+.kit-vibe .gallery-grid button,
+.kit-vibe .athlete-grid article {
+  background: transparent;
+}
+
+.kit-vibe .gallery-grid img {
+  aspect-ratio: 1 / 1.08;
+}
+
+.kit-vibe .news-grid img,
+.kit-vibe .video-grid img {
+  aspect-ratio: 16 / 9;
+}
+
+.kit-vibe .athlete-grid img {
+  aspect-ratio: 1 / 1;
+}
+
+.news-grid h3,
+.video-grid h3,
+.featured-video h3,
+.gallery-grid strong,
+.athlete-grid h3 {
+  margin: 9px 0 0;
+  color: var(--ink);
+  font-size: calc(0.92rem * var(--ui-scale));
+  font-weight: var(--card-weight);
+  line-height: 1.45;
+}
+
+.news-grid p,
+.video-grid p,
+.featured-video p,
+.athlete-grid p,
+.text-block p {
+  margin: 5px 0 0;
+  color: var(--muted);
+  font-size: calc(0.8rem * var(--ui-scale));
+  font-weight: var(--copy-weight);
+  line-height: var(--body-leading);
+}
+
+.kit-vibe .news-grid h3,
+.kit-vibe .video-grid h3,
+.kit-vibe .featured-video h3,
+.kit-vibe .gallery-grid strong,
+.kit-vibe .athlete-grid h3 {
+  margin-top: 22px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.16;
+}
+
+.kit-vibe .news-grid p,
+.kit-vibe .video-grid p,
+.kit-vibe .featured-video p,
+.kit-vibe .athlete-grid p,
+.kit-vibe .gallery-grid span {
+  max-width: 340px;
+  margin-top: 12px;
+  font-size: 0.92rem;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+.kit-vibe .gallery-grid strong,
+.kit-vibe .gallery-grid span {
+  padding-inline: 0;
+}
+
+.kit-vibe .news-grid h3,
+.kit-vibe .news-grid p {
+  padding-inline: 0;
+}
+
+.kit-vibe .news-grid p {
+  padding-bottom: 0;
+}
+
+.kit-vibe .athlete-grid div {
+  padding: 16px;
+}
+
+.kit-vibe .athlete-grid span {
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--muted);
+  font-size: 0.84rem;
+  font-weight: 400;
+}
+
+.kit-vibe .more-button {
+  min-height: 40px;
+  margin-top: 38px;
+  padding: 0 24px;
+  border-radius: 999px;
+  background: transparent;
+  border-color: #111;
+  color: #111;
+  font-weight: 400;
+}
+
+.kit-audi .news-grid h3,
+.kit-audi .video-grid h3,
+.kit-audi .featured-video h3,
+.kit-audi .gallery-grid strong,
+.kit-audi .athlete-grid h3,
+.kit-audi .medal-table,
+.kit-audi .ad-banner h2 {
+  font-weight: 400;
+}
+
+.kit-audi .news-grid article,
+.kit-audi .video-grid article,
+.kit-audi .featured-video,
+.kit-audi .gallery-grid button,
+.kit-audi .athlete-grid article {
+  overflow: hidden;
+  background: #f4f4f4;
+  border: 0;
+}
+
+.kit-audi .news-grid h3,
+.kit-audi .news-grid p,
+.kit-audi .video-grid h3,
+.kit-audi .video-grid p,
+.kit-audi .featured-video h3,
+.kit-audi .featured-video p,
+.kit-audi .gallery-grid strong,
+.kit-audi .gallery-grid span {
+  padding-inline: 16px;
+}
+
+.kit-audi .news-grid h3,
+.kit-audi .video-grid h3,
+.kit-audi .featured-video h3,
+.kit-audi .gallery-grid strong,
+.kit-audi .athlete-grid h3 {
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+
+.kit-audi .news-grid p,
+.kit-audi .video-grid p,
+.kit-audi .featured-video p {
+  padding-bottom: 16px;
+}
+
+.kit-audi .athlete-grid div {
+  padding: 16px;
+}
+
+.kit-audi .athlete-grid span {
+  border-radius: 0;
+  background: #e6eeee;
+  font-weight: 400;
+}
+
+.kit-spectrum .news-grid h3,
+.kit-spectrum .video-grid h3,
+.kit-spectrum .featured-video h3,
+.kit-spectrum .gallery-grid strong,
+.kit-spectrum .athlete-grid h3 {
+  font-family: var(--heading);
+}
+
+.kit-spectrum .news-grid,
+.kit-spectrum .gallery-grid,
+.kit-spectrum .athlete-grid,
+.kit-spectrum .video-grid {
+  gap: 42px;
+}
+
+.kit-spectrum .news-grid article,
+.kit-spectrum .video-grid article,
+.kit-spectrum .featured-video,
+.kit-spectrum .gallery-grid button,
+.kit-spectrum .athlete-grid article {
+  position: relative;
+  background: transparent;
+  box-shadow: none;
+}
+
+.kit-spectrum .news-grid article:nth-child(2n),
+.kit-spectrum .gallery-grid button:nth-child(2n),
+.kit-spectrum .athlete-grid article:nth-child(2n) {
+  transform: translateY(26px);
+}
+
+.kit-spectrum .news-grid img,
+.kit-spectrum .video-grid img,
+.kit-spectrum .gallery-grid img,
+.kit-spectrum .athlete-grid img {
+  border: 0;
+  filter: saturate(0.74) contrast(1.02);
+}
+
+.kit-spectrum .news-grid article:nth-child(3n) img,
+.kit-spectrum .gallery-grid button:nth-child(3n) img {
+  border-radius: 999px 999px 0 0;
+}
+
+.kit-spectrum .news-grid h3,
+.kit-spectrum .video-grid h3,
+.kit-spectrum .featured-video h3,
+.kit-spectrum .gallery-grid strong,
+.kit-spectrum .athlete-grid h3 {
+  margin-top: 18px;
+  color: var(--ink);
+  font-size: 1.55rem;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.18;
+}
+
+.kit-spectrum .news-grid p,
+.kit-spectrum .video-grid p,
+.kit-spectrum .featured-video p,
+.kit-spectrum .gallery-grid span,
+.kit-spectrum .athlete-grid p {
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.75;
+}
+
+.kit-spectrum .gallery-grid strong,
+.kit-spectrum .gallery-grid span {
+  padding-inline: 0;
+}
+
+.kit-spectrum .athlete-grid div {
+  padding: 0;
+}
+
+.kit-spectrum .athlete-grid span {
+  padding: 0;
+  background: transparent;
+  color: var(--brand);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.kit-aalto .news-grid article,
+.kit-aalto .video-grid article,
+.kit-aalto .athlete-grid article,
+.kit-aalto .gallery-grid button {
+  overflow: hidden;
+  background: #101723;
+  border: 0;
+  box-shadow: 0 16px 34px rgba(5, 11, 22, 0.14);
+  transform: none;
+}
+
+.kit-aalto .news-grid img,
+.kit-aalto .video-grid img,
+.kit-aalto .gallery-grid img,
+.kit-aalto .athlete-grid img {
+  filter: saturate(0.8) contrast(1.12);
+}
+
+.kit-aalto .news-grid h3,
+.kit-aalto .video-grid h3,
+.kit-aalto .featured-video h3,
+.kit-aalto .gallery-grid strong,
+.kit-aalto .athlete-grid h3 {
+  color: #fff;
+  font-size: 1.18rem;
+  text-transform: uppercase;
+}
+
+.kit-aalto .news-grid p,
+.kit-aalto .video-grid p,
+.kit-aalto .featured-video p,
+.kit-aalto .gallery-grid span,
+.kit-aalto .athlete-grid p {
+  color: rgba(255, 255, 255, 0.66);
+}
+
+.kit-aalto .gallery-grid strong,
+.kit-aalto .gallery-grid span {
+  padding-inline: 16px;
+}
+
+.kit-aalto .gallery-grid span {
+  padding-bottom: 16px;
+}
+
+.kit-aalto .athlete-grid div {
+  padding: 16px;
+}
+
+.kit-aalto .athlete-grid span {
+  border-radius: 0;
+  background: #ef2319;
+  color: #fff;
+}
+
+.kit-aalto .featured-video {
+  overflow: hidden;
+  background: #101723;
+  box-shadow: 0 16px 34px rgba(5, 11, 22, 0.14);
+}
+
+.video-section {
+  text-align: center;
+}
+
+.video-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--card-gap);
+  align-items: start;
+  text-align: left;
+}
+
+.featured-video {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  text-align: left;
+}
+
+.featured-video .video-thumb {
+  position: relative;
+}
+
+.featured-video img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.play-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.86);
+  color: var(--brand);
+  transform: translate(-50%, -50%);
+  font-size: 0.84rem;
+  font-weight: 800;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--card-gap);
+  text-align: left;
+}
+
+.video-grid article > div {
+  position: relative;
+}
+
+.video-grid img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.video-grid .play-button {
+  width: 32px;
+  height: 32px;
+}
+
+.more-button {
+  min-width: 150px;
+  min-height: 32px;
+  margin-top: 22px;
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #111827;
+  font-weight: 800;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--card-gap);
+}
+
+.gallery-grid button {
+  display: grid;
+  padding: 0;
+  background: #fff;
+  text-align: left;
+  cursor: pointer;
+}
+
+.score-scroll-actions {
+  display: none;
+}
+
+.gallery-grid img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.gallery-grid strong,
+.gallery-grid span {
+  padding: 0 10px;
+}
+
+.gallery-grid span {
+  margin: 4px 0 10px;
+  color: var(--muted);
+  font-size: 0.76rem;
+}
+
+.athlete-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--card-gap);
+}
+
+.athlete-grid article {
+  border: 1px solid var(--line);
+}
+
+.athlete-grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.athlete-grid div {
+  padding: 12px;
+}
+
+.athlete-grid span {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #111827;
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.medal-section {
+  background:
+    radial-gradient(circle at 0 50%, color-mix(in srgb, var(--brand) 12%, transparent), transparent 30%),
+    var(--page);
+}
+
+.taiwan-medals-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 88% 12%, rgba(0, 80, 181, 0.08), transparent 35%),
+    repeating-radial-gradient(ellipse at 70% 0%, rgba(0, 80, 181, 0.06) 0 2px, transparent 2px 18px),
+    #ffffff;
+}
+
+.kit-vibe .taiwan-medals-section {
+  background: #fff;
+}
+
+.kit-vibe .taiwan-medal-podium {
+  margin-top: 44px;
+  gap: 18px;
+}
+
+.kit-vibe .taiwan-medal-card {
+  height: 220px;
+  background: #111;
+  color: #fff;
+  box-shadow: none;
+}
+
+.kit-vibe .taiwan-medal-card.gold {
+  height: 260px;
+  background: #111;
+}
+
+.kit-vibe .taiwan-medal-card strong {
+  font-size: 4.4rem;
+  font-weight: 400;
+}
+
+.kit-vibe .medal-section {
+  background: #fff;
+}
+
+.kit-vibe .medal-table {
+  max-width: 100%;
+  font-size: 1rem;
+}
+
+.kit-vibe .medal-table th,
+.kit-vibe .medal-table td {
+  padding-block: 18px;
+  background: #fff;
+}
+
+.kit-vibe .medal-table tr:nth-child(even) td,
+.kit-vibe .medal-table tr:nth-child(4) td {
+  background: #fff;
+}
+
+.taiwan-medal-podium {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1.12fr 1fr;
+  align-items: end;
+  max-width: 1040px;
+  margin: 26px auto 0;
+}
+
+.taiwan-medal-card {
+  height: 158px;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 8px;
+  padding: 22px;
+  background: #243cc7;
+  color: #fff;
+  box-shadow: 0 14px 32px rgba(25, 54, 164, 0.18);
+}
+
+.taiwan-medal-card.gold {
+  z-index: 2;
+  height: 188px;
+  margin-bottom: -8px;
+  background: #1f58c8;
+  box-shadow: 0 18px 38px rgba(20, 52, 150, 0.26);
+}
+
+.taiwan-medal-card span {
+  font-size: calc(0.94rem * var(--ui-scale));
+  font-weight: 700;
+}
+
+.taiwan-medal-card strong {
+  font-family: var(--heading);
+  font-size: calc(2rem * var(--ui-scale));
+  line-height: 1;
+}
+
+.taiwan-medal-detail {
+  display: none;
+  margin: 0;
+}
+
+.medal-coin {
+  display: grid;
+  width: 66px;
+  height: 66px;
+  place-items: center;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 36% 28%, rgba(255, 255, 255, 0.82), transparent 18%),
+    rgba(255, 255, 255, 0.12);
+  font-size: 2.75rem;
+  line-height: 1;
+}
+
+.kit-pulse .taiwan-medal-card {
+  border-radius: 24px;
+}
+
+.kit-audi .taiwan-medals-section {
+  background: #f6f7f7;
+}
+
+.kit-audi .taiwan-medal-card {
+  background: #fff;
+  color: #111;
+  border: 1px solid #e1e5e8;
+  box-shadow: none;
+}
+
+.kit-audi .taiwan-medal-card.gold {
+  background: #fff;
+  border-top: 3px solid #111;
+}
+
+.kit-spectrum .taiwan-medals-section {
+  padding-top: 58px;
+  padding-bottom: 58px;
+}
+
+.kit-aalto .taiwan-medals-section {
+  background: #f1f2f1;
+}
+
+.kit-aalto .taiwan-medal-card {
+  background: #101723;
+  box-shadow: 0 16px 30px rgba(5, 11, 22, 0.14);
+}
+
+.kit-aalto .taiwan-medal-card.gold {
+  background: #ef2319;
+}
+
+.kit-aalto .taiwan-medal-card strong {
+  font-size: 2.75rem;
+}
+
+.medal-section.is-compact .medal-table tbody tr:nth-child(n + 7) {
+  display: none;
+}
+
+.medal-table {
+  width: 100%;
+  max-width: 820px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: calc(0.92rem * var(--ui-scale));
+}
+
+.medal-table th {
+  padding: 11px 10px;
+  color: var(--ink);
+  text-align: left;
+}
+
+.medal-table td {
+  padding: 13px 10px;
+  border-top: 1px solid #e2e8f0;
+  background: #f7fbfd;
+}
+
+.medal-table tr:nth-child(even) td {
+  background: #edf5f8;
+}
+
+.medal-table tr:nth-child(4) td {
+  background: color-mix(in srgb, var(--accent) 24%, white);
+}
+
+.kit-audi .medal-table {
+  max-width: 920px;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+}
+
+.kit-audi .medal-table th {
+  padding: 14px 12px;
+  border-bottom: 1px solid #dfe5e7;
+  color: #111;
+  font-size: 0.82rem;
+  font-weight: 400;
+}
+
+.kit-audi .medal-table td {
+  padding: 14px 12px;
+  border-top: 0;
+  border-bottom: 1px solid #e7ecee;
+  background: #fff;
+  font-weight: 400;
+}
+
+.kit-audi .medal-table tr:nth-child(even) td {
+  background: #f8f9f9;
+}
+
+.kit-audi .medal-table tr:nth-child(4) td {
+  background: #eef4f4;
+}
+
+.medal-table th:nth-child(n + 3),
+.medal-table td:nth-child(n + 3) {
+  text-align: center;
+  font-weight: 800;
+}
+
+.country-cell {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.country-flag {
+  display: none;
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+.medal-icon {
+  display: inline-grid;
+  width: 12px;
+  height: 12px;
+  place-items: center;
+  margin-right: 5px;
+  border-radius: 999px;
+  font-size: 0;
+  vertical-align: middle;
+}
+
+.medal-icon.gold {
+  background: #d5a300;
+}
+
+.medal-icon.silver {
+  background: #9ca3af;
+}
+
+.medal-icon.bronze {
+  background: #b46a2c;
+}
+
+.kit-vibe .medal-icon,
+.kit-pulse .medal-icon,
+.kit-audi .medal-icon,
+.kit-spectrum .medal-icon {
+  display: none;
+}
+
+.kit-aalto .country-flag {
+  display: inline-block;
+}
+
+.kit-aalto .medal-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 18% 10%, rgba(232, 51, 28, 0.92) 0 24%, transparent 25%),
+    radial-gradient(ellipse at 100% 14%, rgba(110, 205, 44, 0.88) 0 22%, transparent 23%),
+    linear-gradient(118deg, transparent 0 60%, rgba(44, 134, 203, 0.85) 61% 74%, transparent 75%),
+    linear-gradient(104deg, transparent 0 68%, rgba(96, 186, 55, 0.9) 69% 82%, transparent 83%),
+    linear-gradient(135deg, #b89010 0 10%, #7c0b16 10% 26%, #40106f 26% 72%, #131a49 72% 100%);
+  color: #fff;
+}
+
+.kit-aalto .medal-section::before {
+  position: absolute;
+  inset: -18% auto auto -8%;
+  width: 72%;
+  height: 70%;
+  content: "";
+  border-radius: 50%;
+  border: 34px solid rgba(0, 0, 0, 0.2);
+  transform: rotate(-18deg);
+  pointer-events: none;
+}
+
+.kit-aalto .medal-section::after {
+  position: absolute;
+  right: 54px;
+  top: 34px;
+  content: "7";
+  color: #ef2319;
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1;
+  opacity: 0.9;
+}
+
+.kit-aalto .medal-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+.kit-aalto .medal-table {
+  max-width: 920px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: var(--heading);
+  background: #eeeeec;
+  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.28);
+}
+
+.kit-aalto .medal-table th {
+  height: auto;
+  padding: 10px 12px;
+  background: #3f454c;
+  color: #fff;
+  font-size: 0.95rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.kit-aalto .medal-table th:first-child,
+.kit-aalto .medal-table th:last-child {
+  background: #3f454c;
+  color: #fff;
+}
+
+.kit-aalto .medal-table th:nth-child(3),
+.kit-aalto .medal-table th:nth-child(4),
+.kit-aalto .medal-table th:nth-child(5) {
+  font-size: 0.95rem;
+}
+
+.kit-aalto .medal-table td {
+  padding: 9px 12px;
+  border-top: 2px solid #c2c2c0;
+  background: #eeeeec;
+  color: #3c4037;
+  font-size: 1.08rem;
+  font-weight: 800;
+  box-shadow: none;
+}
+
+.kit-aalto .medal-table td:first-child {
+  width: 64px;
+  background: #eeeeec;
+  color: #333833;
+  font-size: 1.08rem;
+  font-style: normal;
+  text-align: center;
+}
+
+.kit-aalto .medal-table td:nth-child(2) {
+  min-width: 220px;
+  background: #eeeeec;
+  color: #333833;
+  font-size: 1.24rem;
+  font-weight: 800;
+}
+
+.kit-aalto .medal-table td:nth-child(3) {
+  background: #eeeeec;
+}
+
+.kit-aalto .medal-table td:nth-child(4) {
+  background: #eeeeec;
+}
+
+.kit-aalto .medal-table td:nth-child(5) {
+  background: #eeeeec;
+}
+
+.kit-aalto .medal-table td:nth-child(6) {
+  background: #eeeeec;
+  color: #bc1746;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.kit-aalto .medal-table tbody tr:nth-child(4) td {
+  background: #d6c335;
+  color: #333833;
+}
+
+.kit-aalto .medal-table tbody tr:nth-child(4) td:nth-child(6) {
+  color: #bc1746;
+}
+
+.kit-aalto .medal-table .total-badge {
+  display: inline;
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  background: transparent;
+  color: #061226;
+  font-size: 1.34rem;
+  font-weight: 900;
+  box-shadow: none;
+}
+
+.kit-aalto .medal-icon {
+  display: none;
+}
+
+.kit-aalto .medal-icon::before,
+.kit-aalto .medal-icon::after {
+  position: absolute;
+  top: -10px;
+  width: 9px;
+  height: 14px;
+  content: "";
+  background: #e22d25;
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0 72%);
+}
+
+.kit-aalto .medal-icon::before {
+  left: 6px;
+  transform: rotate(-7deg);
+}
+
+.kit-aalto .medal-icon::after {
+  right: 6px;
+  background: #ffd33d;
+  transform: rotate(7deg) scaleX(-1);
+}
+
+.kit-aalto .medal-icon.gold {
+  background:
+    radial-gradient(circle at 34% 28%, #fff3a5 0 12%, transparent 14%),
+    linear-gradient(135deg, #f8d25f, #a58316 72%);
+}
+
+.kit-aalto .medal-icon.silver {
+  background:
+    radial-gradient(circle at 34% 28%, #fff 0 12%, transparent 14%),
+    linear-gradient(135deg, #f0f3f5, #8e939a 72%);
+}
+
+.kit-aalto .medal-icon.bronze {
+  background:
+    radial-gradient(circle at 34% 28%, #f5dac6 0 12%, transparent 14%),
+    linear-gradient(135deg, #d4aa88, #8b634a 72%);
+}
+
+.update-note {
+  max-width: 820px;
+  margin: 16px auto 0;
+  color: var(--muted);
+  text-align: center;
+  font-size: 0.78rem;
+}
+
+.text-block {
+  text-align: center;
+}
+
+.text-block p {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.event-footer {
+  padding: 18px;
+  background: var(--brand);
+  color: #fff;
+  text-align: center;
+  font-size: 0.78rem;
+}
+
+.inspector {
+  padding: 20px;
+  border-width: 0 0 0 1px;
+}
+
+.inspector-header {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e3e9ef;
+}
+
+.editor-fields,
+.nested-editor {
+  display: grid;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.editor-fields label,
+.nested-card label {
+  display: grid;
+  gap: 6px;
+}
+
+.editor-fields span,
+.nested-card span {
+  color: #475569;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.field-hint {
+  color: #64748b;
+  font-size: 0.76rem;
+  line-height: 1.5;
+}
+
+.hero-text-controls {
+  display: grid;
+  gap: 10px;
+}
+
+.controlled-field {
+  display: grid;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid #e3e9ef;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.editor-fields .field-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #111827;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.editor-fields .field-toggle input {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  accent-color: var(--brand);
+}
+
+.editor-fields .controlled-input {
+  display: grid;
+  gap: 6px;
+  padding-left: 28px;
+}
+
+.controlled-input span {
+  color: #64748b;
+  font-size: 0.74rem;
+  font-weight: 800;
+}
+
+.hero-bg-editor {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+  padding: 12px;
+  border: 1px solid #d7e0e8;
+  border-radius: var(--radius);
+  background: #f8fafc;
+}
+
+.hero-bg-editor span {
+  color: #475569;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.hero-bg-editor small {
+  display: block;
+  margin-top: 4px;
+  color: #64748b;
+  font-size: 0.76rem;
+  line-height: 1.5;
+}
+
+.hero-bg-editor img,
+.hero-bg-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  border: 1px solid #d7e0e8;
+  border-radius: var(--radius);
+  background: #e2e8f0;
+  object-fit: cover;
+}
+
+.hero-bg-editor .is-mobile-preview {
+  aspect-ratio: 16 / 2;
+}
+
+.hero-bg-divider {
+  height: 1px;
+  background: #d7e0e8;
+}
+
+.hero-bg-placeholder {
+  display: grid;
+  place-items: center;
+  color: #64748b;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.hero-bg-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.hero-bg-actions label,
+.hero-bg-actions button {
+  display: grid;
+  min-height: 38px;
+  place-items: center;
+  border: 1px solid var(--brand);
+  border-radius: var(--radius);
+  background: #fff;
+  color: var(--brand);
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.hero-bg-actions input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hero-bg-actions button:disabled {
+  border-color: #cbd5e1;
+  color: #94a3b8;
+  cursor: not-allowed;
+}
+
+.nested-image-field {
+  display: grid;
+  gap: 8px;
+}
+
+.nested-image-field > span {
+  color: #475569;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.nested-image-field img,
+.nested-image-field > div:not(:last-child) {
+  width: 84px;
+  aspect-ratio: 1 / 1;
+  border: 1px solid #d7e0e8;
+  border-radius: var(--radius);
+  background: #e2e8f0;
+  object-fit: cover;
+}
+
+.nested-image-field > div:not(:last-child) {
+  display: grid;
+  place-items: center;
+  color: #64748b;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.nested-image-field > div:last-child {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.nested-image-field label,
+.nested-image-field button {
+  display: grid;
+  min-height: 34px;
+  place-items: center;
+  border: 1px solid var(--brand);
+  border-radius: var(--radius);
+  background: #fff;
+  color: var(--brand);
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.nested-image-field input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.nested-image-field button:disabled {
+  border-color: #cbd5e1;
+  color: #94a3b8;
+  cursor: not-allowed;
+}
+
+.editor-fields input,
+.editor-fields textarea,
+.nested-card input {
+  width: 100%;
+  border: 1px solid #d7e0e8;
+  border-radius: var(--radius);
+  padding: 10px 11px;
+  background: #fff;
+  color: #111827;
+  resize: vertical;
+}
+
+.nested-editor h3 {
+  margin: 8px 0 0;
+  font-size: 1rem;
+}
+
+.nested-card {
+  display: grid;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid #e3e9ef;
+  border-radius: var(--radius);
+  background: #f8fafc;
+}
+
+.nested-card.compact {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.toggle-field {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 16px;
+  padding: 12px;
+  border: 1px solid #e3e9ef;
+  border-radius: 8px;
+  background: #f8fafc;
+  color: #111827;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.toggle-field input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--brand);
+}
+
+.section-actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.section-actions button {
+  min-height: 38px;
+  font-weight: 800;
+}
+
+.section-actions .danger-button {
+  border-color: #fecaca;
+  color: #b42318;
+}
+
+.json-box {
+  margin-top: 18px;
+  border: 1px solid #e3e9ef;
+  border-radius: var(--radius);
+  background: #f8fafc;
+}
+
+.json-box summary {
+  padding: 12px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.json-box pre {
+  max-height: 310px;
+  margin: 0;
+  overflow: auto;
+  padding: 12px;
+  border-top: 1px solid #e3e9ef;
+  font-size: 0.75rem;
+  white-space: pre-wrap;
+}
+
+.empty-state {
+  color: #64748b;
+}
+
+.lightbox {
+  position: fixed;
+  z-index: 100;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 80px 120px;
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+}
+
+.lightbox article {
+  width: min(760px, 100%);
+}
+
+.lightbox img {
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+}
+
+.lightbox h2 {
+  margin: 18px 0 0;
+  font-size: 1.35rem;
+}
+
+.lightbox p {
+  margin: 10px 0 0;
+  color: rgba(255, 255, 255, 0.76);
+  line-height: 1.7;
+}
+
+.lightbox article span {
+  display: block;
+  margin-top: 14px;
+  color: rgba(255, 255, 255, 0.72);
+  text-align: center;
+}
+
+.lightbox-close,
+.lightbox-arrow {
+  position: absolute;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.lightbox-close {
+  top: 26px;
+  right: 34px;
+  font-size: 3rem;
+}
+
+.lightbox-arrow {
+  top: 50%;
+  width: 46px;
+  height: 46px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #111827;
+  font-size: 2rem;
+  transform: translateY(-50%);
+}
+
+.lightbox-arrow.left {
+  left: 20px;
+}
+
+.lightbox-arrow.right {
+  right: 20px;
+}
+
+/* Competition kit: one broadcast system, led by red accents and graphite surfaces. */
+.kit-aalto .event-site {
+  background: #f0f1ef;
+}
+
+.kit-aalto .site-nav div button.is-active {
+  color: var(--brand);
+  border-bottom-color: var(--brand);
+}
+
+.kit-aalto .event-hero.is-home-hero {
+  background:
+    linear-gradient(105deg, rgba(8, 17, 31, 0.98) 0 44%, rgba(8, 17, 31, 0.78) 62%, rgba(8, 17, 31, 0.5) 100%),
+    radial-gradient(circle at 78% 32%, rgba(228, 35, 27, 0.34), transparent 28%),
+    #08111f;
+}
+
+.kit-aalto .event-hero.is-home-hero::before {
+  background:
+    linear-gradient(180deg, rgba(8, 17, 31, 0.02), rgba(8, 17, 31, 0.82)),
+    linear-gradient(90deg, rgba(8, 17, 31, 0.95), transparent 58%);
+}
+
+.kit-aalto .event-hero.is-home-hero::after {
+  color: rgba(255, 255, 255, 0.07);
+}
+
+.kit-aalto .event-hero.is-home-hero .hero-title span,
+.kit-aalto .hero-countdown-widget > span,
+.kit-aalto .score-section-header span {
+  color: var(--brand);
+}
+
+.kit-aalto .event-hero.is-home-hero .hero-countdown-widget {
+  border-left: 5px solid var(--brand);
+  background: rgba(8, 17, 31, 0.94);
+  box-shadow: 0 20px 46px rgba(0, 0, 0, 0.36);
+}
+
+.kit-aalto .hero-countdown-widget strong {
+  color: #fff;
+}
+
+.kit-aalto .hero-countdown-widget p {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.kit-aalto .hero-countdown-widget small {
+  color: rgba(255, 255, 255, 0.58);
+}
+
+.kit-aalto .event-hero.is-page-hero {
+  background:
+    linear-gradient(105deg, rgba(8, 17, 31, 0.96), rgba(8, 17, 31, 0.68)),
+    radial-gradient(circle at 82% 24%, rgba(228, 35, 27, 0.28), transparent 26%),
+    #08111f;
+}
+
+.kit-aalto .content-section,
+.kit-aalto .text-block,
+.kit-aalto .video-section,
+.kit-aalto .score-section,
+.kit-aalto .taiwan-medals-section {
+  background: #f0f1ef;
+}
+
+.kit-aalto .content-section:nth-child(even) {
+  background: #ffffff;
+}
+
+.kit-aalto .ad-banner {
+  background: #ffffff;
+  border-top: 4px solid var(--brand);
+  box-shadow: 0 16px 34px rgba(8, 17, 31, 0.08);
+}
+
+.kit-aalto .section-title span {
+  background: var(--brand);
+}
+
+.kit-aalto .section-title h2,
+.kit-aalto .score-section-header h2 {
+  color: var(--ink);
+}
+
+.kit-aalto .news-grid article,
+.kit-aalto .video-grid article,
+.kit-aalto .athlete-grid article,
+.kit-aalto .gallery-grid button,
+.kit-aalto .featured-video,
+.kit-aalto .match-card {
+  overflow: hidden;
+  background: #fff;
+  border-top: 4px solid var(--brand);
+  box-shadow: 0 16px 34px rgba(8, 17, 31, 0.1);
+}
+
+.kit-aalto .news-grid h3,
+.kit-aalto .video-grid h3,
+.kit-aalto .featured-video h3,
+.kit-aalto .gallery-grid strong,
+.kit-aalto .athlete-grid h3 {
+  color: var(--ink);
+}
+
+.kit-aalto .news-grid p,
+.kit-aalto .video-grid p,
+.kit-aalto .featured-video p,
+.kit-aalto .gallery-grid span,
+.kit-aalto .athlete-grid p {
+  color: var(--muted);
+}
+
+.kit-aalto .athlete-grid span {
+  background: var(--brand);
+}
+
+.kit-aalto .score-section {
+  padding-top: 46px;
+  padding-bottom: 62px;
+}
+
+.kit-aalto .match-scoreline strong {
+  color: var(--ink);
+}
+
+.kit-aalto .match-scoreline span {
+  background: #f0f1ef;
+}
+
+.kit-aalto .score-cta {
+  border-color: var(--brand);
+  background: var(--brand);
+}
+
+.section-title span,
+.score-section-header span {
+  display: none;
+}
+
+.event-hero.has-custom-bg .hero-athletes,
+.kit-audi .event-hero.has-custom-bg .hero-athletes,
+.kit-spectrum .event-hero.has-custom-bg .hero-athletes,
+.kit-aalto .event-hero.has-custom-bg .hero-athletes {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.event-hero.has-custom-bg .hero-athletes .hero-custom-bg,
+.kit-vibe .event-hero.has-custom-bg .hero-athletes .hero-custom-bg,
+.kit-audi .event-hero.has-custom-bg .hero-athletes .hero-custom-bg,
+.kit-spectrum .event-hero.has-custom-bg .hero-athletes .hero-custom-bg,
+.kit-aalto .event-hero.has-custom-bg .hero-athletes .hero-custom-bg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  mix-blend-mode: normal;
+  filter: none;
+  object-fit: cover;
+}
+
+.event-hero.has-custom-bg .hero-athletes .hero-placeholder-bg,
+.kit-vibe .event-hero.has-custom-bg .hero-athletes .hero-placeholder-bg,
+.kit-audi .event-hero.has-custom-bg .hero-athletes .hero-placeholder-bg,
+.kit-spectrum .event-hero.has-custom-bg .hero-athletes .hero-placeholder-bg,
+.kit-aalto .event-hero.has-custom-bg .hero-athletes .hero-placeholder-bg {
+  display: none;
+}
+
+.kit-aalto .taiwan-medal-card {
+  background: var(--ink);
+}
+
+.kit-aalto .taiwan-medal-card.gold {
+  background: var(--brand);
+}
+
+.kit-aalto .medal-section {
+  background:
+    radial-gradient(circle at 82% 14%, rgba(228, 35, 27, 0.26), transparent 20%),
+    linear-gradient(118deg, transparent 0 64%, rgba(228, 35, 27, 0.16) 65% 76%, transparent 77%),
+    linear-gradient(135deg, #161c24 0 24%, #2b3038 24% 52%, #08111f 52% 100%);
+}
+
+.kit-aalto .medal-section::before {
+  border-color: rgba(255, 255, 255, 0.06);
+}
+
+.kit-aalto .medal-section::after {
+  color: var(--brand);
+}
+
+.kit-aalto .medal-section .section-title h2 {
+  color: #fff;
+}
+
+.kit-aalto .medal-table {
+  background: #eeeeec;
+  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.28);
+}
+
+.kit-aalto .medal-table th {
+  background: #3f454c;
+}
+
+.kit-aalto .medal-table td,
+.kit-aalto .medal-table td:first-child,
+.kit-aalto .medal-table td:nth-child(2),
+.kit-aalto .medal-table td:nth-child(3),
+.kit-aalto .medal-table td:nth-child(4),
+.kit-aalto .medal-table td:nth-child(5),
+.kit-aalto .medal-table td:nth-child(6) {
+  background: #eeeeec;
+  color: #343a35;
+}
+
+.kit-aalto .medal-table td:nth-child(6),
+.kit-aalto .medal-table .total-badge {
+  color: #bc1746;
+}
+
+.kit-aalto .medal-table tbody tr:nth-child(4) td {
+  background: #d6c335;
+}
+
+.kit-aalto .race-action-rail span {
+  background: var(--brand);
+}
+
+/* Elegant kit: soft boutique editorial system inspired by refined product catalogs. */
+.kit-spectrum {
+  --brand: #c59b80;
+  --brand-2: #a59f97;
+  --accent: #ffffff;
+  --ink: #25221f;
+  --muted: #746f68;
+  --surface: #f7f3f0;
+  --page-soft: #ffffff;
+  --heading: "Noto Serif TC", "Noto Sans TC", serif;
+  --section-pad-y: 74px;
+  --section-pad-x: max(70px, 10%);
+  --card-gap: 26px;
+  --card-weight: 400;
+  --copy-weight: 400;
+  --body-leading: 1.78;
+}
+
+.kit-spectrum .event-site {
+  background: #f7f3f0;
+  border: 1px solid rgba(37, 34, 31, 0.14);
+  border-radius: 0;
+  box-shadow: 0 30px 80px rgba(37, 34, 31, 0.1);
+}
+
+.kit-spectrum .site-nav {
+  min-height: 56px;
+  padding-inline: 28px;
+  background: rgba(247, 243, 240, 0.96);
+  border-bottom: 1px solid rgba(37, 34, 31, 0.18);
+  color: var(--ink);
+}
+
+.kit-spectrum .site-logo {
+  color: var(--ink);
+  font-family: var(--heading);
+  font-size: 1.05rem;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.kit-spectrum .site-nav div {
+  gap: 18px;
+}
+
+.kit-spectrum .site-nav div button {
+  min-height: 28px;
+  padding: 0;
+  border-radius: 0;
+  color: var(--ink);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.kit-spectrum .site-nav div button.is-active {
+  background: transparent;
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.kit-spectrum .share-dots {
+  color: var(--ink);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+}
+
+.kit-spectrum .event-hero {
+  min-height: 440px;
+  background:
+    linear-gradient(90deg, rgba(247, 243, 240, 0.98) 0 50%, rgba(240, 237, 232, 0.74) 50% 100%),
+    #f7f3f0;
+}
+
+.kit-spectrum .event-hero::before {
+  opacity: 1;
+  background:
+    linear-gradient(90deg, rgba(247, 243, 240, 0.96) 0 50%, transparent 51%),
+    radial-gradient(circle at 82% 34%, rgba(197, 155, 128, 0.12), transparent 28%);
+}
+
+.kit-spectrum .event-hero .hero-athletes {
+  display: grid;
+  grid-template-columns: 1fr;
+  inset: 0 0 0 48%;
+  opacity: 0.86;
+}
+
+.kit-spectrum .event-hero .hero-athletes img {
+  display: none;
+}
+
+.kit-spectrum .event-hero .hero-athletes .hero-placeholder-bg:first-of-type,
+.kit-spectrum .event-hero .hero-athletes .hero-custom-bg {
+  display: block;
+  opacity: 0.72;
+  mix-blend-mode: multiply;
+  filter: grayscale(0.35) saturate(0.62) contrast(0.96);
+}
+
+.kit-spectrum .event-hero.is-home-hero,
+.kit-spectrum .event-hero.is-home-hero.has-countdown {
+  grid-template-columns: 1fr;
+  min-height: 440px;
+  place-items: center start;
+  padding: 78px max(66px, 8%);
+  text-align: left;
+}
+
+.kit-spectrum .event-hero.is-home-hero .hero-title,
+.kit-spectrum .event-hero.is-home-hero.has-countdown .hero-title {
+  max-width: 520px;
+  margin-inline: 0;
+  text-align: left;
+}
+
+.kit-spectrum .event-hero.is-home-hero .hero-title span {
+  padding: 0;
+  background: transparent;
+  color: var(--ink);
+  font-family: var(--heading);
+  font-size: 1.05rem;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
+
+.kit-spectrum .event-hero.is-home-hero .hero-title h2 {
+  max-width: 480px;
+  margin-top: 18px;
+  color: var(--brand);
+  font-size: 68px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0.98;
+}
+
+.kit-spectrum .event-hero.is-home-hero .hero-title p {
+  width: auto;
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-family: var(--heading);
+  font-size: 0.95rem;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
+.kit-spectrum .event-hero.is-page-hero {
+  min-height: 280px;
+  background: #ffffff;
+}
+
+.kit-spectrum .event-hero.is-page-hero .hero-title h2 {
+  color: var(--brand);
+  font-size: 68px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.kit-spectrum .event-hero.is-home-hero .hero-countdown-widget {
+  justify-self: start;
+  width: min(430px, 100%);
+  margin-top: 4px;
+  border: 1px solid rgba(37, 34, 31, 0.16);
+  background: rgba(247, 243, 240, 0.9);
+  color: var(--ink);
+  box-shadow: none;
+}
+
+.kit-spectrum .hero-countdown-widget > span,
+.kit-spectrum .hero-countdown-widget small {
+  color: var(--muted);
+  font-family: "Noto Sans TC", Inter, sans-serif;
+  font-style: normal;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.kit-spectrum .hero-countdown-widget strong {
+  color: var(--ink);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.kit-spectrum .content-section,
+.kit-spectrum .text-block,
+.kit-spectrum .video-section,
+.kit-spectrum .score-section,
+.kit-spectrum .taiwan-medals-section,
+.kit-spectrum .medal-section {
+  background: #f7f3f0;
+  border-top: 1px solid rgba(37, 34, 31, 0.1);
+}
+
+.kit-spectrum .content-section:nth-child(even),
+.kit-spectrum .video-section:nth-child(even),
+.kit-spectrum .score-section,
+.kit-spectrum .medal-section {
+  background: #ffffff;
+}
+
+.kit-spectrum .section-title {
+  place-items: start;
+  max-width: 1080px;
+  margin-inline: auto;
+  margin-bottom: 28px;
+}
+
+.kit-spectrum .section-title h2,
+.kit-spectrum .score-section-header h2 {
+  max-width: 760px;
+  color: #d18b60;
+  font-family: "Noto Serif TC", "Noto Sans TC", serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.28px;
+  text-transform: none;
+}
+
+.kit-spectrum .score-section-header {
+  max-width: 1080px;
+}
+
+.kit-spectrum .score-section-header span {
+  display: none;
+}
+
+.kit-spectrum .ad-banner {
+  width: min(880px, calc(100% - 40px));
+  margin-top: 30px;
+  margin-bottom: 30px;
+  grid-template-columns: minmax(180px, 0.72fr) 1fr;
+  gap: 0;
+  overflow: hidden;
+  background: #f7f3f0;
+  border: 1px solid rgba(37, 34, 31, 0.14);
+  box-shadow: none;
+}
+
+.kit-spectrum .ad-banner img {
+  height: 100%;
+  min-height: 160px;
+  filter: grayscale(0.28) saturate(0.62);
+}
+
+.kit-spectrum .ad-banner div {
+  padding: 22px 26px;
+}
+
+.kit-spectrum .ad-banner span,
+.kit-spectrum .ad-banner a {
+  color: var(--ink);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.kit-spectrum .ad-banner h2 {
+  color: var(--ink);
+  font-family: var(--heading);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.12;
+}
+
+.kit-spectrum .ad-banner p {
+  color: var(--muted);
+}
+
+.kit-spectrum .news-grid,
+.kit-spectrum .gallery-grid,
+.kit-spectrum .athlete-grid,
+.kit-spectrum .video-grid {
+  gap: 26px;
+}
+
+.kit-spectrum .news-grid article,
+.kit-spectrum .video-grid article,
+.kit-spectrum .featured-video,
+.kit-spectrum .gallery-grid button,
+.kit-spectrum .athlete-grid article,
+.kit-spectrum .match-card,
+.kit-spectrum .taiwan-medal-card {
+  overflow: hidden;
+  background: #f7f3f0;
+  border: 1px solid rgba(37, 34, 31, 0.12);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.kit-spectrum .news-grid article {
+  overflow: visible;
+  background: transparent;
+  border: 0;
+}
+
+.kit-spectrum .news-grid article:nth-child(2n),
+.kit-spectrum .video-grid article:nth-child(2n),
+.kit-spectrum .gallery-grid button:nth-child(2n),
+.kit-spectrum .athlete-grid article:nth-child(2n) {
+  background: #ffffff;
+  transform: none;
+}
+
+.kit-spectrum .news-grid article:nth-child(2n) {
+  background: transparent;
+}
+
+.kit-spectrum .news-grid img,
+.kit-spectrum .video-grid img,
+.kit-spectrum .featured-video img,
+.kit-spectrum .gallery-grid img,
+.kit-spectrum .athlete-grid img {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  filter: grayscale(0.26) saturate(0.58) contrast(0.98);
+}
+
+.kit-spectrum .gallery-grid img {
+  aspect-ratio: 4 / 3;
+}
+
+.kit-spectrum .news-grid img,
+.kit-spectrum .video-grid img {
+  aspect-ratio: 16 / 9;
+}
+
+.kit-spectrum .news-grid img {
+  background: #ffffff;
+}
+
+.kit-spectrum .news-grid h3,
+.kit-spectrum .video-grid h3,
+.kit-spectrum .featured-video h3,
+.kit-spectrum .gallery-grid strong,
+.kit-spectrum .athlete-grid h3 {
+  color: var(--ink);
+  font-family: var(--heading);
+  font-size: 1.42rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.12;
+  text-transform: none;
+}
+
+.kit-spectrum .news-grid p,
+.kit-spectrum .video-grid p,
+.kit-spectrum .featured-video p,
+.kit-spectrum .gallery-grid span,
+.kit-spectrum .athlete-grid p {
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.75;
+}
+
+.kit-spectrum .athlete-grid div,
+.kit-spectrum .gallery-grid strong,
+.kit-spectrum .gallery-grid span {
+  padding-inline: 18px;
+}
+
+.kit-spectrum .athlete-grid span {
+  width: fit-content;
+  padding: 0;
+  background: transparent;
+  color: var(--muted);
+  font-family: var(--heading);
+  font-size: 0.86rem;
+  font-style: italic;
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
+
+.kit-spectrum .play-button,
+.kit-spectrum .match-scoreline span {
+  background: #f8f6f3;
+  color: var(--ink);
+  border: 1px solid rgba(36, 36, 33, 0.18);
+}
+
+.kit-spectrum .match-card {
+  min-height: 150px;
+}
+
+.kit-spectrum .match-scoreline strong {
+  color: var(--ink);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.kit-spectrum .match-card time,
+.kit-spectrum .match-card p,
+.kit-spectrum .match-card small {
+  color: var(--muted);
+}
+
+.kit-spectrum .score-cta,
+.kit-spectrum .more-button {
+  border: 1px solid rgba(36, 36, 33, 0.16);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink);
+  font-size: 0.62rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.kit-spectrum .taiwan-medals-section {
+  background: #ffffff;
+}
+
+.kit-spectrum .medal-table {
+  background: #f7f3f0;
+  border: 1px solid rgba(37, 34, 31, 0.14);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.kit-spectrum .medal-table th {
+  color: var(--ink);
+  font-family: var(--heading);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.kit-spectrum .medal-table td {
+  background: #f7f3f0;
+  color: var(--ink);
+  border-color: rgba(37, 34, 31, 0.1);
+}
+
+.kit-spectrum .medal-table tr:nth-child(even) td {
+  background: #ffffff;
+}
+
+.kit-spectrum .medal-table tr:nth-child(4) td {
+  background: #ffffff;
+}
+
+.kit-spectrum .text-block p,
+.kit-spectrum .update-note {
+  color: var(--muted);
+}
+
+.kit-vibe .event-hero.is-home-hero::before,
+.kit-spectrum .event-hero::before {
+  display: none;
+}
+
+.kit-vibe .event-hero .hero-athletes,
+.kit-spectrum .event-hero .hero-athletes {
+  opacity: 1;
+}
+
+.kit-vibe .event-hero .hero-athletes img,
+.kit-vibe .event-hero.has-custom-bg .hero-athletes .hero-custom-bg,
+.kit-spectrum .event-hero .hero-athletes img,
+.kit-spectrum .event-hero .hero-athletes .hero-placeholder-bg,
+.kit-spectrum .event-hero .hero-athletes .hero-custom-bg {
+  opacity: 1;
+  mix-blend-mode: normal;
+  filter: none;
+}
+
+.kit-spectrum .event-hero.is-home-hero .hero-athletes,
+.kit-spectrum .event-hero.is-page-hero .hero-athletes {
+  display: block;
+  inset: 0;
+  background: transparent;
+}
+
+.kit-spectrum .event-hero .hero-athletes .hero-placeholder-bg:first-of-type,
+.kit-spectrum .event-hero .hero-athletes .hero-custom-bg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  mix-blend-mode: normal;
+  filter: none;
+}
+
+.kit-spectrum .event-hero {
+  background: #fff;
+}
+
+.kit-spectrum .ad-banner {
+  width: min(620px, calc(100% - 32px));
+  margin: 18px auto;
+  grid-template-columns: 220px 1fr;
+  gap: 16px;
+  background: #fff;
+}
+
+.kit-spectrum .preview-section.is-adBanner {
+  display: flow-root;
+  background: #fff;
+}
+
+.kit-spectrum .event-hero.is-page-hero,
+.kit-spectrum .event-hero.is-page-hero .hero-title,
+.kit-spectrum .event-hero.is-page-hero .hero-title h2,
+.kit-spectrum .event-hero.is-page-hero .hero-title p,
+.kit-spectrum .event-hero.is-page-hero .hero-title span {
+  text-shadow: none;
+}
+
+.kit-spectrum .event-hero.is-page-hero .hero-title p {
+  color: var(--ink);
+}
+
+.kit-spectrum .ad-banner img {
+  height: 112px;
+  min-height: 0;
+  filter: none;
+}
+
+.kit-spectrum .ad-banner div {
+  padding: 0 14px 0 0;
+}
+
+.kit-spectrum .medal-table th {
+  background: var(--brand);
+  color: #fff;
+}
+
+.kit-spectrum .video-grid article,
+.kit-spectrum .featured-video,
+.kit-spectrum .news-grid article {
+  overflow: visible;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+.kit-spectrum .video-grid article:nth-child(2n),
+.kit-spectrum .news-grid article:nth-child(2n) {
+  background: transparent;
+}
+
+.kit-spectrum .video-grid img,
+.kit-spectrum .featured-video img,
+.kit-spectrum .news-grid img {
+  aspect-ratio: 16 / 9;
+  filter: none;
+}
+
+.kit-spectrum .athlete-grid article,
+.kit-spectrum .athlete-grid article:nth-child(2n) {
+  background: #fff;
+  border: 0;
+  box-shadow: none;
+}
+
+.kit-spectrum .athlete-grid div {
+  padding: 16px;
+}
+
+.kit-spectrum .news-grid h3,
+.kit-spectrum .news-grid p {
+  padding-inline: 0;
+}
+
+.kit-spectrum .text-block {
+  text-align: left;
+}
+
+.kit-spectrum .text-block p {
+  max-width: 1080px;
+  margin-inline: auto;
+  text-align: left;
+}
+
+.hero-countdown-widget div {
+  width: 100%;
+  max-width: 999px;
+  gap: 8px;
+}
+
+.hero-countdown-widget strong {
+  max-width: 999px;
+}
+
+.kit-spectrum .event-hero.is-home-hero .hero-countdown-widget {
+  width: min(360px, 100%);
+  gap: 8px;
+  justify-self: start;
+  margin-top: 18px;
+  padding: 12px 0 0;
+  border: 0;
+  border-top: 1px solid rgba(197, 155, 128, 0.72);
+  background: transparent;
+  color: var(--ink);
+  box-shadow: none;
+  backdrop-filter: none;
+  text-align: left;
+}
+
+.kit-spectrum .hero-countdown-widget > span {
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+
+.kit-spectrum .hero-countdown-widget div {
+  justify-items: start;
+}
+
+.kit-spectrum .hero-countdown-widget strong {
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  align-items: end;
+  gap: 5px;
+  color: var(--brand);
+  font-size: 1.48rem;
+  font-style: normal;
+  font-weight: 400;
+  justify-items: start;
+}
+
+.kit-spectrum .hero-countdown-widget small {
+  display: inline;
+  margin-top: 0;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  opacity: 1;
+  text-align: left;
+}
+
+.site-nav div button,
+.kit-vibe .site-nav div button,
+.kit-pulse .site-nav div button,
+.kit-audi .site-nav div button,
+.kit-aalto .site-nav div button {
+  font-size: 16px;
+}
+
+.kit-spectrum .site-nav div button {
+  color: #8f8f8f;
+  font-family: Inter, "Noto Sans TC", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.kit-spectrum .site-nav div button.is-active {
+  color: #000;
+  font-family: Inter, "Noto Sans TC", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.kit-spectrum .event-hero,
+.kit-spectrum .content-section,
+.kit-spectrum .text-block,
+.kit-spectrum .video-section,
+.kit-spectrum .score-section,
+.kit-spectrum .taiwan-medals-section,
+.kit-spectrum .medal-section,
+.kit-spectrum .preview-section.is-adBanner {
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.kit-spectrum .event-hero .hero-title span,
+.kit-spectrum .event-hero.is-home-hero .hero-title span {
+  color: #fff;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.kit-spectrum .event-hero .hero-title h2,
+.kit-spectrum .event-hero.is-home-hero .hero-title h2,
+.kit-spectrum .event-hero.is-page-hero .hero-title h2 {
+  color: #fff;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.kit-spectrum .event-hero .hero-title p,
+.kit-spectrum .event-hero.is-home-hero .hero-title p,
+.kit-spectrum .event-hero.is-page-hero .hero-title p {
+  color: #fff;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.kit-spectrum .event-hero.is-home-hero .hero-countdown-widget {
+  border-top-color: rgba(216, 180, 157, 0.72);
+}
+
+.kit-spectrum .hero-countdown-widget > span,
+.kit-spectrum .hero-countdown-widget small {
+  color: #fff;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.kit-spectrum .hero-countdown-widget strong {
+  color: #fff;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Elegant v4: synced from the Figma component board copied from node 252:2. */
+.kit-spectrum {
+  --brand: #be9173;
+  --brand-2: #ce9682;
+  --accent: #be9173;
+  --ink: #333333;
+  --muted: #746f68;
+  --line: #ebe5e0;
+  --surface: #fcfaf9;
+  --page-soft: #f9f8f5;
+  --heading: "Noto Serif TC", "Noto Sans TC", serif;
+  --section-pad-x: max(80px, calc((100% - 960px) / 2));
+  --section-pad-y: 64px;
+  --card-gap: 32px;
+  --body-leading: 1.56;
+}
+
+.kit-spectrum .event-site {
+  max-width: 1440px;
+  background: #f9f8f5;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.kit-spectrum .site-nav {
+  grid-template-columns: 126px 1fr;
+  min-height: 58px;
+  padding: 0 38px;
+  background: #fcfaf9;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.12);
+}
+
+.kit-spectrum .site-logo {
+  width: 104px;
+  min-height: 38px;
+  justify-self: start;
+}
+
+.kit-spectrum .site-logo img {
+  width: 104px;
+  filter: brightness(0);
+}
+
+.kit-spectrum .site-nav div {
+  gap: 32px;
+  justify-content: center;
+}
+
+.kit-spectrum .site-nav div button {
+  min-height: 34px;
+  padding: 0;
+  border-radius: 0;
+  color: #958e85;
+  font-family: Inter, "Noto Sans TC", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.82px;
+  text-decoration: none;
+}
+
+.kit-spectrum .site-nav div button.is-active {
+  background: transparent;
+  color: #000;
+  font-family: Inter, "Noto Sans TC", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1.82px;
+  text-decoration: none;
+  box-shadow: none;
+}
+
+.kit-spectrum .event-hero,
+.kit-spectrum .event-hero.is-home-hero,
+.kit-spectrum .event-hero.is-home-hero.has-countdown {
+  min-height: 440px;
+  height: 440px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  place-items: center start;
+  padding: 72px max(84px, 8%);
+  overflow: hidden;
+  background: #c1b3a3;
+}
+
+.kit-spectrum .event-hero::before {
+  display: none;
+}
+
+.kit-spectrum .event-hero .hero-athletes,
+.kit-spectrum .event-hero.is-home-hero .hero-athletes,
+.kit-spectrum .event-hero.is-page-hero .hero-athletes {
+  position: absolute;
+  inset: 0;
+  display: block;
+  opacity: 1;
+  background: transparent;
+}
+
+.kit-spectrum .event-hero .hero-athletes img {
+  display: none;
+}
+
+.kit-spectrum .event-hero .hero-athletes .hero-placeholder-bg:first-of-type,
+.kit-spectrum .event-hero .hero-athletes .hero-custom-bg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  mix-blend-mode: normal;
+  filter: none;
+  object-fit: cover;
+  object-position: center;
+}
+
+.kit-spectrum .event-hero.has-custom-bg .hero-athletes .hero-placeholder-bg {
+  display: none;
+}
+
+.kit-spectrum .event-hero .hero-title,
+.kit-spectrum .event-hero.is-home-hero .hero-title,
+.kit-spectrum .event-hero.is-home-hero.has-countdown .hero-title {
+  position: relative;
+  z-index: 2;
+  max-width: 360px;
+  margin: 0;
+  text-align: left;
+}
+
+.kit-spectrum .event-hero .hero-title span,
+.kit-spectrum .event-hero.is-home-hero .hero-title span {
+  display: block;
+  padding: 0;
+  background: transparent;
+  color: #fff;
+  font-family: Inter, "Noto Sans TC", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+  text-transform: none;
+}
+
+.kit-spectrum .event-hero .hero-title h2,
+.kit-spectrum .event-hero.is-home-hero .hero-title h2,
+.kit-spectrum .event-hero.is-page-hero .hero-title h2 {
+  max-width: 360px;
+  margin: 14px 0 0;
+  color: #fff;
+  font-family: "Noto Serif TC", "Noto Sans TC", serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.1;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.kit-spectrum .event-hero .hero-title p,
+.kit-spectrum .event-hero.is-home-hero .hero-title p,
+.kit-spectrum .event-hero.is-page-hero .hero-title p {
+  width: auto;
+  margin: 10px 0 0;
+  color: #fff;
+  font-family: "Noto Serif TC", "Noto Sans TC", serif;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.35;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.kit-spectrum .event-hero.is-page-hero {
+  min-height: 280px;
+  height: 280px;
+  padding: 78px max(84px, 8%) 42px;
+}
+
+.kit-spectrum .event-hero.is-page-hero .hero-title {
+  max-width: 420px;
+}
+
+.kit-spectrum .event-hero.is-home-hero .hero-countdown-widget {
+  position: relative;
+  z-index: 2;
+  justify-self: start;
+  width: min(360px, 100%);
+  margin: 18px 0 0;
+  padding: 12px 0 0;
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.72);
+  background: transparent;
+  box-shadow: none;
+  text-align: left;
+}
+
+.kit-spectrum .hero-countdown-widget > span {
+  color: #fff;
+  font-family: "Noto Sans TC", Inter, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 1;
+  text-align: left;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.kit-spectrum .hero-countdown-widget div {
+  width: 100%;
+  max-width: 999px;
+  grid-template-columns: repeat(3, max-content);
+  gap: 8px;
+  justify-content: start;
+  justify-items: start;
+}
+
+.kit-spectrum .hero-countdown-widget strong {
+  display: inline-grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  align-items: end;
+  gap: 5px;
+  max-width: 999px;
+  color: #fff;
+  font-family: "Noto Serif TC", "Noto Sans TC", serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.kit-spectrum .hero-countdown-widget small {
+  display: inline;
+  margin: 0 0 1px;
+  color: #fff;
+  font-family: "Noto Sans TC", Inter, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  opacity: 1;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.kit-spectrum .content-section,
+.kit-spectrum .text-block,
+.kit-spectrum .video-section,
+.kit-spectrum .score-section,
+.kit-spectrum .taiwan-medals-section,
+.kit-spectrum .medal-section,
+.kit-spectrum .preview-section.is-adBanner {
+  background: #f9f8f5;
+  border: 0;
+}
+
+.kit-spectrum .preview-section.is-adBanner {
+  display: flow-root;
+  padding: 22px 0 30px;
+  background: #f9f8f5;
+}
+
+.kit-spectrum .section-title,
+.kit-spectrum .score-section-header {
+  max-width: 620px;
+  margin: 0 auto 28px;
+  place-items: start;
+  text-align: left;
+}
+
+.kit-spectrum .section-title span {
+  display: none;
+}
+
+.kit-spectrum .section-title h2,
+.kit-spectrum .score-section-header h2 {
+  max-width: 720px;
+  margin: 0;
+  color: #333333;
+  font-family: "Noto Serif TC", "Noto Sans TC", serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 1.28px;
+  line-height: normal;
+}
+
+.kit-spectrum .score-section {
+  padding: 38px max(80px, calc((100% - 620px) / 2)) 54px;
+  text-align: center;
+}
+
+.kit-spectrum .score-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  max-width: 620px;
+  margin-bottom: 22px;
+  text-align: left;
+}
+
+.kit-spectrum .score-section-header > div:first-child {
+  min-width: 0;
+}
+
+.kit-spectrum .score-section-header span {
+  display: none;
+}
+
+.kit-spectrum .score-section-header .score-scroll-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.kit-spectrum .score-scroll-actions button {
+  display: flex;
+  padding: 6px 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border: 1px solid #b8b8b8;
+  border-radius: 25px;
+  background: transparent;
+  color: #000;
+  cursor: pointer;
+}
+
+.kit-spectrum .score-scroll-actions button svg {
+  display: block;
+  width: 12px;
+  height: 10px;
+}
+
+.kit-spectrum .score-scroll-actions button.is-prev svg {
+  transform: rotate(180deg);
+}
+
+.kit-spectrum .score-carousel,
+.kit-spectrum .match-card-grid {
+  max-width: 620px;
+  text-align: initial;
+}
+
+.kit-spectrum .match-card-grid {
+  gap: 14px;
+}
+
+.kit-spectrum .match-card {
+  padding: 20px 12px;
+  background: #ffffff;
+  border: 0;
+  border-radius: 0;
+  box-shadow: 0 8px 40px 0 rgba(231, 229, 226, 0.5);
+}
+
+.kit-spectrum .match-card time {
+  color: #be9173;
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.kit-spectrum .match-scoreline {
+  grid-template-columns: 28px 1fr 28px;
+  gap: 6px;
+  margin-top: 5px;
+}
+
+.kit-spectrum .match-scoreline span {
+  width: 28px;
+  height: 28px;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-size: 17px;
+}
+
+.kit-spectrum .match-scoreline strong {
+  color: #25221f;
+  font-family: "Noto Serif TC", "Noto Sans TC", serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.kit-spectrum .match-card p,
+.kit-spectrum .match-card small {
+  color: #746f68;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.kit-spectrum .score-cta,
+.kit-spectrum .more-button {
+  display: inline-flex;
+  padding: 10px 32px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 0;
+  border-radius: 999px;
+  background: #242421;
+  color: #fff;
+  font-family: Inter, "Noto Sans TC", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: none;
+}
+
+.kit-spectrum .ad-banner {
+  display: block;
+  width: 970px;
+  max-width: 970px;
+  height: 250px;
+  margin: 0 auto;
+  overflow: visible;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.kit-spectrum .ad-banner img {
+  width: 970px;
+  max-width: 970px;
+  height: 250px;
+  min-height: 0;
+  filter: none;
+  object-fit: cover;
+}
+
+.kit-spectrum .ad-banner div {
+  padding: 0 14px 0 0;
+}
+
+.kit-spectrum .ad-banner span,
+.kit-spectrum .ad-banner a {
+  color: #25221f;
+  font-family: Inter, "Noto Sans TC", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.kit-spectrum .ad-banner h2 {
+  color: #25221f;
+  font-family: "Noto Serif TC", "Noto Sans TC", serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.18;
+}
+
+.kit-spectrum .ad-banner p {
+  color: #746f68;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.kit-spectrum .taiwan-medals-section {
+  min-height: 340px;
+  padding: 64px max(72px, calc((100% - 960px) / 2));
+  background:
+    linear-gradient(0deg, rgba(249, 248, 245, 0.62), rgba(249, 248, 245, 0.62)),
+    radial-gradient(circle at 94% 34%, rgba(197, 155, 128, 0.28) 0 14%, transparent 15%),
+    linear-gradient(132deg, transparent 0 53%, rgba(190, 145, 115, 0.18) 53% 67%, transparent 67%),
+    linear-gradient(28deg, rgba(235, 229, 224, 0.86) 0 44%, rgba(224, 212, 204, 0.72) 44% 70%, #f9f8f5 70%);
+  background-position: center;
+  background-size: cover;
+}
+
+.kit-spectrum .content-section.taiwan-medals-section.has-custom-bg,
+.kit-spectrum .taiwan-medals-section.has-custom-bg {
+  background: var(--taiwan-medals-bg);
+  background-position: center;
+  background-size: cover;
+}
+
+.kit-spectrum .taiwan-medal-panel {
+  max-width: 960px;
+  min-height: 250px;
+  margin: 0 auto;
+  padding: 40px 78px 54px;
+  background: rgba(255, 255, 255, 1);
+}
+
+.kit-spectrum .taiwan-medals-section .section-title {
+  text-align: center;
+  place-items: center;
+  margin-bottom: 8px;
+}
+
+.kit-spectrum .taiwan-medals-section .update-note {
+  max-width: none;
+  margin: 0 auto 38px;
+  color: #746f68;
+  font-size: 12px;
+  text-align: center;
+}
+
+.kit-spectrum .taiwan-medal-podium {
+  max-width: none;
+  min-height: 92px;
+  gap: 0;
+  align-items: stretch;
+  margin-top: 0;
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.kit-spectrum .taiwan-medal-card,
+.kit-spectrum .taiwan-medal-card.gold,
+.kit-spectrum .taiwan-medal-card:nth-child(2n) {
+  height: auto;
+  min-height: 92px;
+  margin: 0;
+  padding: 0 38px;
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr);
+  grid-template-rows: auto auto auto;
+  align-content: center;
+  place-items: center start;
+  gap: 4px 22px;
+  background: transparent;
+  border: 0;
+  border-right: 1px solid #ebe5e0;
+  border-radius: 0;
+  color: #25221f;
+  box-shadow: none;
+  text-align: left;
+}
+
+.kit-spectrum .taiwan-medal-card.gold {
+  z-index: 2;
+  min-height: 92px;
+}
+
+.kit-spectrum .taiwan-medal-card:last-child {
+  border-right: 0;
+}
+
+.kit-spectrum .taiwan-medal-card span {
+  grid-column: 2;
+  grid-row: 1;
+  color: #25221f;
+  font-size: 18px;
+  font-weight: 500;
+  justify-self: start;
+  line-height: 1.2;
+}
+
+.kit-spectrum .taiwan-medal-count {
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.kit-spectrum .taiwan-medal-card strong {
+  color: #25221f;
+  font-family: "Noto Serif TC", "Noto Sans TC", serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+.kit-spectrum .taiwan-medal-count small {
+  color: #25221f;
+  font-family: "Noto Serif TC", "Noto Sans TC", serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.kit-spectrum .medal-coin,
+.kit-spectrum .taiwan-medal-image {
+  grid-column: 1;
+  grid-row: 1 / 4;
+  width: 88px;
+  height: 88px;
+  align-self: center;
+  aspect-ratio: 1 / 1;
+  border-radius: 0;
+  color: transparent;
+  font-size: 0;
+  object-fit: cover;
+}
+
+.kit-spectrum .taiwan-medal-card.bronze .medal-coin {
+  background:
+    linear-gradient(135deg, transparent 0 36%, rgba(255, 255, 255, 0.28) 36% 44%, transparent 44%),
+    linear-gradient(135deg, #a56a55 0%, #d7a08c 52%, #7c574c 100%);
+  clip-path: polygon(18% 78%, 62% 16%, 88% 40%, 44% 88%);
+}
+
+.kit-spectrum .taiwan-medal-card.gold .medal-coin {
+  background:
+    radial-gradient(circle, #efd07c 0 16%, transparent 17%),
+    conic-gradient(from 8deg, #c59b80, #f2d9a4, #b7775f, #f4c06e, #c59b80);
+  clip-path: polygon(50% 0, 59% 30%, 91% 11%, 72% 43%, 100% 50%, 72% 57%, 91% 89%, 59% 70%, 50% 100%, 41% 70%, 9% 89%, 28% 57%, 0 50%, 28% 43%, 9% 11%, 41% 30%);
+}
+
+.kit-spectrum .taiwan-medal-card.silver .medal-coin {
+  background:
+    radial-gradient(circle at 74% 34%, rgba(207, 150, 130, 0.55), transparent 32%),
+    linear-gradient(135deg, #8f9090 0%, #d6d7d4 52%, #766f68 100%);
+  border-radius: 999px;
+}
+
+.kit-spectrum .taiwan-medal-detail {
+  display: none;
+}
+
+.kit-spectrum .update-note {
+  max-width: 620px;
+  margin: 18px auto 0;
+  color: #746f68;
+  text-align: center;
+}
+
+.kit-spectrum .medal-section {
+  padding: 64px max(80px, calc((100% - 620px) / 2));
+}
+
+.kit-spectrum .medal-table {
+  max-width: 620px;
+  overflow: hidden;
+  background: #fff;
+  border: 0;
+  border-collapse: collapse;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.kit-spectrum .medal-table th {
+  padding: 11px 14px;
+  background: #be9173;
+  color: #fff;
+  font-family: Inter, "Noto Sans TC", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.kit-spectrum .medal-table td,
+.kit-spectrum .medal-table td:first-child,
+.kit-spectrum .medal-table td:nth-child(2),
+.kit-spectrum .medal-table td:nth-child(3),
+.kit-spectrum .medal-table td:nth-child(4),
+.kit-spectrum .medal-table td:nth-child(5),
+.kit-spectrum .medal-table td:nth-child(6),
+.kit-spectrum .medal-table tr:nth-child(even) td,
+.kit-spectrum .medal-table tr:nth-child(4) td {
+  padding: 13px 14px;
+  background: #fff;
+  border-top: 1px solid #ebe5e0;
+  color: #333333;
+  font-family: Inter, "Noto Sans TC", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.kit-spectrum .medal-table .total-badge {
+  color: #be9173;
+  font-weight: 700;
+}
+
+.kit-spectrum .news-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.96fr);
+  max-width: 620px;
+  gap: 22px 24px;
+  margin: 0 auto;
+}
+
+.kit-spectrum .news-grid article,
+.kit-spectrum .news-grid article:nth-child(2n) {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
+  overflow: visible;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  transform: none;
+}
+
+.kit-spectrum .news-grid article:first-child {
+  grid-row: span 5;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 0;
+  align-content: start;
+  align-items: start;
+}
+
+.kit-spectrum .news-grid article:nth-child(n + 6) {
+  display: none;
+}
+
+.kit-spectrum .news-grid img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  filter: none;
+  object-fit: cover;
+}
+
+.kit-spectrum .news-grid article:nth-child(3n) img,
+.kit-spectrum .gallery-grid button:nth-child(3n) img {
+  border-radius: 0;
+}
+
+.kit-spectrum .news-grid article:not(:first-child) img {
+  min-width: 92px;
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+
+.kit-spectrum .news-grid article:not(:first-child) .text-container {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  justify-content: center;
+  gap: 4px;
+}
+
+.kit-spectrum .news-grid article:first-child .text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  margin-top: 18px;
+}
+
+.kit-spectrum .news-grid article:not(:first-child) h3 {
+  display: -webkit-box;
+  overflow: hidden;
+  font-size: 20px;
+  line-height: 1.32;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.kit-spectrum .news-grid h3,
+.kit-spectrum .video-grid h3,
+.kit-spectrum .featured-video h3,
+.kit-spectrum .gallery-grid strong,
+.kit-spectrum .athlete-grid h3 {
+  margin: 0;
+  padding: 0;
+  color: #25221f;
+  font-family: "Noto Sans TC", Inter, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+.kit-spectrum .news-grid article:first-child h3 {
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+.kit-spectrum .news-grid article:first-child p {
+  margin-top: 0;
+}
+
+.kit-spectrum .news-grid p,
+.kit-spectrum .video-grid p,
+.kit-spectrum .featured-video p,
+.kit-spectrum .gallery-grid span,
+.kit-spectrum .athlete-grid p {
+  margin: 6px 0 0;
+  padding: 0;
+  color: #746f68;
+  font-family: "Noto Sans TC", Inter, sans-serif;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.kit-spectrum .video-layout {
+  max-width: 620px;
+  margin: 0 auto;
+  gap: 22px;
+}
+
+.kit-spectrum .featured-video,
+.kit-spectrum .video-grid article,
+.kit-spectrum .video-grid article:nth-child(2n) {
+  overflow: visible;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.kit-spectrum .featured-video img,
+.kit-spectrum .video-grid img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  filter: none;
+  object-fit: cover;
+}
+
+.kit-spectrum .featured-video h3,
+.kit-spectrum .featured-video p,
+.kit-spectrum .video-grid h3,
+.kit-spectrum .video-grid p {
+  padding-inline: 0;
+}
+
+.kit-spectrum .featured-video h3,
+.kit-spectrum .video-grid h3 {
+  margin-top: 18px;
+  font-size: 20px;
+  line-height: 1.32;
+}
+
+.kit-spectrum .featured-video p,
+.kit-spectrum .video-grid p {
+  margin-top: 4px;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.kit-spectrum .video-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 26px;
+}
+
+.kit-spectrum .gallery-grid {
+  max-width: 620px;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 26px;
+}
+
+.kit-spectrum .gallery-grid button,
+.kit-spectrum .gallery-grid button:nth-child(2n) {
+  overflow: visible;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  transform: none;
+}
+
+.kit-spectrum .gallery-grid img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  filter: none;
+  object-fit: cover;
+}
+
+.kit-spectrum .gallery-grid strong {
+  margin-top: 18px;
+  padding-inline: 0;
+  font-size: 20px;
+  line-height: 1.32;
+}
+
+.kit-spectrum .gallery-grid span {
+  margin-top: 4px;
+  padding-inline: 0;
+  color: #746f68;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.kit-spectrum .play-button {
+  width: 46px;
+  height: 46px;
+  border: 0;
+  background: rgba(255, 255, 255, 0.92);
+  color: #25221f;
+  box-shadow: none;
+}
+
+.kit-spectrum .video-grid .play-button {
+  width: 34px;
+  height: 34px;
+}
+
+.kit-spectrum .athlete-grid article,
+.kit-spectrum .athlete-grid article:nth-child(2n) {
+  overflow: visible;
+  background: #fff;
+  border: 0;
+  border-radius: 0;
+  box-shadow: 0 8px 40px 0 rgba(231, 229, 226, 0.5);
+  transform: none;
+}
+
+.kit-spectrum .athlete-grid div {
+  padding: 16px;
+}
+
+.kit-spectrum .athlete-grid span {
+  color: #be9173;
+  font-family: "Noto Sans TC", Inter, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.kit-spectrum .athlete-grid h3 {
+  font-family: "Noto Serif TC", "Noto Sans TC", serif;
+}
+
+.kit-spectrum .text-block {
+  padding: 58px max(80px, calc((100% - 620px) / 2));
+  text-align: left;
+}
+
+.kit-spectrum .text-block .section-title,
+.kit-spectrum .text-block p {
+  max-width: 620px;
+  margin-inline: auto;
+  text-align: left;
+}
+
+.kit-spectrum .text-block p {
+  color: #746f68;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.kit-spectrum .event-footer {
+  min-height: 42px;
+  display: grid;
+  place-items: center;
+  background: #be9173;
+  color: #fff;
+  font-size: 11px;
+}
+
+@media (min-width: 1024px) {
+  .kit-spectrum .section-title,
+  .kit-spectrum .score-section-header,
+  .kit-spectrum .score-carousel,
+  .kit-spectrum .match-card-grid,
+  .kit-spectrum .medal-table,
+  .kit-spectrum .news-grid,
+  .kit-spectrum .video-layout,
+  .kit-spectrum .gallery-grid,
+  .kit-spectrum .text-block .section-title,
+  .kit-spectrum .text-block p,
+  .kit-spectrum .update-note {
+    max-width: 960px;
+  }
+
+  .kit-spectrum .score-section,
+  .kit-spectrum .medal-section,
+  .kit-spectrum .text-block {
+    padding-inline: max(72px, calc((100% - 960px) / 2));
+  }
+
+  .kit-spectrum .score-section {
+    padding-top: 48px;
+    padding-bottom: 58px;
+  }
+
+  .kit-spectrum .match-card-grid {
+    gap: 20px;
+  }
+
+  .kit-spectrum .match-card {
+    padding: 20px 12px;
+  }
+
+  .kit-spectrum .match-scoreline {
+    grid-template-columns: 36px 1fr 36px;
+  }
+
+  .kit-spectrum .match-scoreline span {
+    width: 36px;
+    height: 36px;
+    font-size: 22px;
+  }
+
+  .kit-spectrum .match-scoreline strong {
+    font-size: 30px;
+  }
+
+  .kit-spectrum .news-grid {
+    grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+    gap: 12px 34px;
+  }
+
+  .kit-spectrum .news-grid article,
+  .kit-spectrum .news-grid article:nth-child(2n) {
+    grid-template-columns: 132px minmax(0, 1fr);
+    column-gap: 24px;
+    row-gap: 0;
+  }
+
+  .kit-spectrum .news-grid article:not(:first-child) img {
+    min-width: 132px;
+  }
+
+  .kit-spectrum .news-grid h3,
+  .kit-spectrum .video-grid h3,
+  .kit-spectrum .featured-video h3,
+  .kit-spectrum .gallery-grid strong,
+  .kit-spectrum .athlete-grid h3 {
+    font-size: 20px;
+  }
+
+  .kit-spectrum .news-grid article:not(:first-child) h3 {
+    font-size: 20px;
+  }
+
+  .kit-spectrum .news-grid article:first-child h3 {
+    font-size: 20px;
+  }
+
+  .kit-spectrum .news-grid p,
+  .kit-spectrum .video-grid p,
+  .kit-spectrum .featured-video p,
+  .kit-spectrum .gallery-grid span,
+  .kit-spectrum .athlete-grid p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .builder-app {
+    grid-template-columns: 260px minmax(0, 1fr);
+  }
+
+  .inspector {
+    grid-column: 1 / -1;
+    height: auto;
+    border-width: 1px 0 0;
+  }
+}
+
+@media (max-width: 820px) {
+  .builder-app {
+    display: block;
+  }
+
+  .builder-sidebar,
+  .preview-stage,
+  .inspector {
+    height: auto;
+  }
+
+  .builder-topbar,
+  .site-nav {
+    align-items: stretch;
+    grid-template-columns: 1fr;
+  }
+
+  .site-nav div {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .share-dots {
+    justify-self: start;
+  }
+
+  .page-preview {
+    padding: 14px;
+  }
+
+  .event-hero {
+    min-height: 190px;
+  }
+
+  .event-hero.is-home-hero,
+  .kit-vibe .event-hero.is-home-hero,
+  .kit-audi .event-hero.is-home-hero,
+  .kit-aalto .event-hero.is-home-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-title h2 {
+    font-size: 2.7rem;
+  }
+
+  .ad-banner {
+    width: 320px;
+    max-width: 320px;
+    height: 100px;
+  }
+
+  .ad-banner img {
+    width: 320px;
+    max-width: 320px;
+    height: 100px;
+  }
+
+  .content-section,
+  .text-block {
+    padding: 28px 20px;
+  }
+
+  .news-grid,
+  .gallery-grid,
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .kit-spectrum .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .kit-spectrum .ad-banner,
+  .kit-spectrum .ad-banner img {
+    width: 320px;
+    max-width: 320px;
+    height: 100px;
+  }
+
+  .athlete-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .kit-spectrum .athlete-grid h3 {
+    font-size: 18px;
+  }
+
+  .video-layout {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--card-gap);
+  }
+
+  .video-layout .featured-video {
+    min-width: 0;
+  }
+
+  .video-layout .video-grid {
+    display: contents;
+  }
+
+  .score-section-header,
+  .match-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .score-carousel {
+    display: grid;
+    gap: 14px;
+    position: relative;
+  }
+
+  .match-card-grid {
+    display: flex;
+    grid-template-columns: none;
+    gap: 14px;
+    max-width: none;
+    overflow-x: auto;
+    padding: 0 0 8px;
+    scroll-behavior: smooth;
+    scroll-padding-inline: 0;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  .match-card-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .match-card {
+    flex: 0 0 min(286px, 86%);
+    min-width: 0;
+    scroll-snap-align: center;
+  }
+
+  .match-scoreline {
+    grid-template-columns: 42px minmax(118px, 1fr) 42px;
+    gap: 8px;
+  }
+
+  .match-scoreline span {
+    width: 42px;
+    height: 42px;
+    font-size: 1.45rem;
+  }
+
+  .match-scoreline strong {
+    font-size: clamp(1.35rem, 8vw, 1.85rem);
+  }
+
+  .score-scroll-actions {
+    position: static;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    pointer-events: auto;
+    transform: none;
+  }
+
+  .score-scroll-actions button {
+    display: flex;
+    width: 42px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 1px solid var(--brand);
+    border-radius: 999px;
+    background: #fff;
+    color: var(--brand);
+    cursor: pointer;
+    font-weight: 800;
+    pointer-events: auto;
+  }
+
+  .score-scroll-actions button span {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    font-size: 1.85rem;
+    line-height: 1;
+    transform: translateY(-1px);
+  }
+
+  .kit-aalto .event-hero {
+    min-height: 520px;
+    padding-bottom: 58px;
+  }
+
+  .kit-aalto .hero-title h2 {
+    font-size: 3.6rem;
+  }
+
+  .kit-aalto .race-hero-side,
+  .kit-aalto .race-action-rail {
+    display: none;
+  }
+
+  .kit-aalto .score-section {
+    padding-inline: 22px;
+  }
+
+  .event-hero.is-home-hero .hero-countdown-widget {
+    position: relative;
+    right: auto;
+    top: auto;
+    width: min(310px, calc(100vw - 88px));
+    max-width: none;
+    margin-top: 22px;
+    transform: none;
+  }
+
+  .kit-aalto .event-hero.is-home-hero .hero-countdown-widget {
+    width: min(310px, calc(100vw - 88px));
+  }
+
+  .kit-aalto .match-card-grid,
+  .kit-aalto .score-section-header {
+    margin-inline: 0;
+  }
+
+  .kit-aalto .match-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .event-site {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .event-site .preview-section {
+    order: 3;
+  }
+
+  .event-site .preview-section:first-of-type {
+    order: 1;
+  }
+
+  .event-site .site-nav {
+    position: relative;
+    order: 2;
+    display: block;
+    min-height: 54px;
+    margin-bottom: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #050505;
+    border-bottom: 0;
+    color: #fff;
+  }
+
+  .event-site .event-footer {
+    order: 4;
+  }
+
+  .site-nav .site-logo,
+  .site-nav .share-dots {
+    display: none;
+  }
+
+  .site-nav div {
+    display: flex;
+    min-width: 0;
+    height: 54px;
+    gap: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+  }
+
+  .site-nav div::-webkit-scrollbar {
+    display: none;
+  }
+
+  .site-nav div button {
+    flex: 0 0 auto;
+    min-width: 108px;
+    min-height: 54px;
+    padding: 0 22px;
+    border-radius: 0;
+    color: rgba(255, 255, 255, 0.64);
+    font-size: 1rem;
+    font-weight: 800;
+    scroll-snap-align: start;
+  }
+
+  .site-nav div button.is-active {
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.08), transparent),
+      transparent;
+    color: #fff;
+    box-shadow: inset 0 -4px 0 #fff;
+    font-weight: 900;
+  }
+
+  .event-hero,
+  .event-hero.is-home-hero,
+  .event-hero.is-page-hero,
+  .kit-vibe .event-hero.is-home-hero,
+  .kit-vibe .event-hero.is-page-hero,
+  .kit-vibe .event-hero.is-home-hero.has-countdown,
+  .kit-pulse .event-hero.is-home-hero,
+  .kit-pulse .event-hero.is-page-hero,
+  .kit-pulse .event-hero.is-home-hero.has-countdown,
+  .kit-audi .event-hero.is-home-hero,
+  .kit-audi .event-hero.is-page-hero,
+  .kit-audi .event-hero.is-home-hero.has-countdown,
+  .kit-spectrum .event-hero.is-home-hero,
+  .kit-spectrum .event-hero.is-page-hero,
+  .kit-spectrum .event-hero.is-home-hero.has-countdown,
+  .kit-aalto .event-hero.is-home-hero,
+  .kit-aalto .event-hero.is-page-hero,
+  .kit-aalto .event-hero.is-home-hero.has-countdown,
+  .kit-aalto .event-hero {
+    min-height: 60px !important;
+    height: 60px !important;
+    grid-template-columns: 1fr;
+    place-items: center;
+    padding: 0 16px !important;
+  }
+
+  .event-hero.is-home-hero .hero-countdown-widget,
+  .event-hero .race-hero-side,
+  .event-hero .race-action-rail {
+    display: none;
+  }
+
+  .event-hero .hero-title,
+  .kit-vibe .event-hero.is-home-hero .hero-title,
+  .kit-audi .event-hero.is-home-hero .hero-title,
+  .kit-spectrum .event-hero.is-home-hero .hero-title,
+  .kit-aalto .event-hero.is-home-hero .hero-title {
+    display: none !important;
+  }
+
+  .hero-mobile-logo {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 16px;
+    display: block;
+    width: min(122px, 32vw);
+    height: auto;
+    filter: none;
+    transform: translateY(-50%);
+  }
+
+  .event-hero .hero-athletes,
+  .kit-vibe .event-hero .hero-athletes,
+  .kit-audi .event-hero .hero-athletes,
+  .kit-spectrum .event-hero .hero-athletes,
+  .kit-aalto .event-hero .hero-athletes {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    display: block !important;
+  }
+
+  .event-hero .hero-athletes img,
+  .kit-vibe .event-hero .hero-athletes img,
+  .kit-audi .event-hero .hero-athletes img,
+  .kit-spectrum .event-hero .hero-athletes img,
+  .kit-aalto .event-hero .hero-athletes img {
+    display: none !important;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    mix-blend-mode: normal;
+    filter: none;
+    object-fit: cover;
+    object-position: center right;
+  }
+
+  .event-hero .hero-athletes .hero-placeholder-bg:first-of-type,
+  .kit-vibe .event-hero .hero-athletes .hero-placeholder-bg:first-of-type,
+  .kit-audi .event-hero .hero-athletes .hero-placeholder-bg:first-of-type,
+  .kit-spectrum .event-hero .hero-athletes .hero-placeholder-bg:first-of-type,
+  .kit-aalto .event-hero .hero-athletes .hero-placeholder-bg:first-of-type {
+    display: block !important;
+  }
+
+  .event-hero.has-mobile-bg .hero-athletes,
+  .kit-audi .event-hero.has-mobile-bg .hero-athletes,
+  .kit-spectrum .event-hero.has-mobile-bg .hero-athletes,
+  .kit-aalto .event-hero.has-mobile-bg .hero-athletes {
+    position: absolute;
+    inset: 0;
+    display: block;
+  }
+
+  .event-hero.has-mobile-bg .hero-athletes .hero-custom-bg,
+  .kit-vibe .event-hero.has-mobile-bg .hero-athletes .hero-custom-bg,
+  .kit-audi .event-hero.has-mobile-bg .hero-athletes .hero-custom-bg,
+  .kit-spectrum .event-hero.has-mobile-bg .hero-athletes .hero-custom-bg,
+  .kit-aalto .event-hero.has-mobile-bg .hero-athletes .hero-custom-bg,
+  .event-hero.has-mobile-bg .hero-athletes .hero-placeholder-bg,
+  .kit-vibe .event-hero.has-mobile-bg .hero-athletes .hero-placeholder-bg,
+  .kit-audi .event-hero.has-mobile-bg .hero-athletes .hero-placeholder-bg,
+  .kit-spectrum .event-hero.has-mobile-bg .hero-athletes .hero-placeholder-bg,
+  .kit-aalto .event-hero.has-mobile-bg .hero-athletes .hero-placeholder-bg,
+  .event-hero.has-custom-bg .hero-athletes .hero-placeholder-bg,
+  .kit-vibe .event-hero.has-custom-bg .hero-athletes .hero-placeholder-bg,
+  .kit-audi .event-hero.has-custom-bg .hero-athletes .hero-placeholder-bg,
+  .kit-spectrum .event-hero.has-custom-bg .hero-athletes .hero-placeholder-bg,
+  .kit-aalto .event-hero.has-custom-bg .hero-athletes .hero-placeholder-bg {
+    display: none !important;
+  }
+
+  .event-hero.has-custom-bg .hero-athletes .hero-custom-bg,
+  .kit-vibe .event-hero.has-custom-bg .hero-athletes .hero-custom-bg,
+  .kit-audi .event-hero.has-custom-bg .hero-athletes .hero-custom-bg,
+  .kit-spectrum .event-hero.has-custom-bg .hero-athletes .hero-custom-bg,
+  .kit-aalto .event-hero.has-custom-bg .hero-athletes .hero-custom-bg,
+  .event-hero.has-mobile-bg .hero-athletes .hero-mobile-bg,
+  .kit-vibe .event-hero.has-mobile-bg .hero-athletes .hero-mobile-bg,
+  .kit-audi .event-hero.has-mobile-bg .hero-athletes .hero-mobile-bg,
+  .kit-spectrum .event-hero.has-mobile-bg .hero-athletes .hero-mobile-bg,
+  .kit-aalto .event-hero.has-mobile-bg .hero-athletes .hero-mobile-bg {
+    display: block !important;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    mix-blend-mode: normal;
+    filter: none;
+    object-fit: cover;
+  }
+
+  .event-hero.has-custom-bg.has-mobile-bg .hero-athletes .hero-custom-bg,
+  .kit-vibe .event-hero.has-custom-bg.has-mobile-bg .hero-athletes .hero-custom-bg,
+  .kit-audi .event-hero.has-custom-bg.has-mobile-bg .hero-athletes .hero-custom-bg,
+  .kit-spectrum .event-hero.has-custom-bg.has-mobile-bg .hero-athletes .hero-custom-bg,
+  .kit-aalto .event-hero.has-custom-bg.has-mobile-bg .hero-athletes .hero-custom-bg {
+    display: none !important;
+  }
+
+  .kit-spectrum .event-site .site-nav {
+    min-height: 58px;
+    background: #050505;
+  }
+
+  .kit-spectrum .site-nav div {
+    height: 58px;
+    gap: 0;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 0 20px;
+  }
+
+  .kit-spectrum .site-nav div button {
+    min-width: max-content;
+    min-height: 58px;
+    padding: 0 22px;
+    color: rgba(255, 255, 255, 0.56);
+    font-family: "Noto Sans TC", Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+  }
+
+  .kit-spectrum .site-nav div button.is-active {
+    background: transparent;
+    color: #fff;
+    box-shadow: inset 0 -3px 0 #fff;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .kit-spectrum .score-section,
+  .kit-spectrum .taiwan-medals-section,
+  .kit-spectrum .medal-section,
+  .kit-spectrum .text-block {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .kit-spectrum .score-section-header,
+  .kit-spectrum .score-carousel,
+  .kit-spectrum .match-card-grid,
+  .kit-spectrum .taiwan-medal-panel,
+  .kit-spectrum .medal-table,
+  .kit-spectrum .text-block .section-title,
+  .kit-spectrum .text-block p,
+  .kit-spectrum .update-note {
+    max-width: none;
+  }
+
+  .kit-spectrum .score-section-header {
+    margin-bottom: 20px;
+  }
+
+  .kit-spectrum .match-card-grid {
+    width: calc(100% + 40px);
+    max-width: none;
+    margin-right: -20px;
+    margin-left: -20px;
+    padding: 0 20px 18px;
+    overflow-x: auto;
+    overflow-y: visible;
+  }
+
+  .kit-spectrum .match-card {
+    flex-basis: min(320px, 86vw);
+  }
+
+  .kit-spectrum .score-scroll-actions {
+    display: none;
+  }
+
+  .kit-spectrum .score-section-header .score-scroll-actions {
+    display: none;
+  }
+
+  .kit-spectrum .taiwan-medals-section {
+    min-height: auto;
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+
+  .kit-spectrum .taiwan-medal-panel {
+    min-height: 0;
+    padding: 32px 16px 32px;
+    text-align: center;
+  }
+
+  .kit-spectrum .taiwan-medals-section .section-title {
+    margin-bottom: 14px;
+  }
+
+  .kit-spectrum .taiwan-medals-section .section-title h2 {
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+    text-align: center;
+  }
+
+  .kit-spectrum .taiwan-medals-section .update-note {
+    line-height: 1.4;
+  }
+
+  .kit-spectrum .taiwan-medal-podium {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0;
+    align-items: stretch;
+  }
+
+  .kit-spectrum .taiwan-medal-card,
+  .kit-spectrum .taiwan-medal-card.gold,
+  .kit-spectrum .taiwan-medal-card:nth-child(2n) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 92px auto auto;
+    min-height: 0;
+    width: 100%;
+    padding: 0;
+    border-right: 1px solid #ebe5e0;
+    border-bottom: 0;
+    justify-self: stretch;
+    place-items: center;
+    text-align: center;
+  }
+
+  .kit-spectrum .taiwan-medal-card:last-child {
+    border-right: 0;
+  }
+
+  .kit-spectrum .medal-coin,
+  .kit-spectrum .taiwan-medal-image {
+    grid-column: 1;
+    grid-row: 1;
+    width: 64px;
+    height: 64px;
+    align-self: start;
+    justify-self: center;
+  }
+
+  .kit-spectrum .taiwan-medal-card span {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    justify-self: center;
+    text-align: center;
+  }
+
+  .kit-spectrum .taiwan-medal-card strong {
+    font-size: 48px;
+    font-weight: 400;
+  }
+
+  .kit-spectrum .taiwan-medal-count {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: center;
+    align-items: baseline;
+    gap: 6px;
+    margin-top: 8px;
+  }
+
+  .kit-spectrum .taiwan-medal-count small {
+    font-size: 16px;
+  }
+
+  .kit-spectrum .news-grid {
+    grid-template-columns: 1fr;
+    max-width: none;
+    gap: 18px;
+  }
+
+  .kit-spectrum .news-grid article,
+  .kit-spectrum .news-grid article:nth-child(2n),
+  .kit-spectrum .news-grid article:first-child {
+    grid-row: auto;
+    grid-template-columns: 112px minmax(0, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 14px;
+    row-gap: 0;
+    align-content: center;
+    align-items: center;
+  }
+
+  .kit-spectrum .news-grid article img,
+  .kit-spectrum .news-grid article:first-child img,
+  .kit-spectrum .news-grid article:not(:first-child) img {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    min-width: 112px;
+    width: 112px;
+    aspect-ratio: 16 / 9;
+  }
+
+  .kit-spectrum .news-grid article .text-container,
+  .kit-spectrum .news-grid article:first-child .text-container,
+  .kit-spectrum .news-grid article:not(:first-child) .text-container {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    flex: 1 0 0;
+    min-width: 0;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 0;
+  }
+
+  .kit-spectrum .news-grid article h3,
+  .kit-spectrum .news-grid article:first-child h3,
+  .kit-spectrum .news-grid article:not(:first-child) h3 {
+    margin: 0;
+    align-self: start;
+    display: block;
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    font-size: 18px;
+    line-height: 1.16;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .kit-spectrum .news-grid article p,
+  .kit-spectrum .news-grid article:first-child p,
+  .kit-spectrum .news-grid article:not(:first-child) p {
+    margin-top: 0;
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 1.25;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .kit-spectrum .video-layout {
+    max-width: none;
+  }
+
+  .kit-spectrum .featured-video,
+  .kit-spectrum .video-grid article {
+    position: relative;
+  }
+
+  .kit-spectrum .featured-video .play-button,
+  .kit-spectrum .video-grid .play-button {
+    width: 34px;
+    height: 34px;
+    left: 50%;
+    top: 50%;
+    font-size: 0.72rem;
+    transform: translate(-50%, -50%);
+  }
+
+  .taiwan-medal-podium {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .taiwan-medal-card,
+  .taiwan-medal-card.gold {
+    height: 150px;
+    margin-bottom: 0;
+  }
+
+  .lightbox {
+    padding: 72px 20px;
+  }
+}

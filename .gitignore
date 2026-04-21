@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.DS_Store
+.tmp_codex_config.toml
+.tmp_flags/
+.codex-artifacts/

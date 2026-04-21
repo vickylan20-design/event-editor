@@ -1,0 +1,4 @@
+interface:
+  display_name: "HTML to Figma"
+  short_description: "Capture a live web page into an editable Figma design"
+  default_prompt: "Import this live web page into Figma, using capture first and only doing minimal cleanup unless I ask for more."
