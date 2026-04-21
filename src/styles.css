@@ -1812,6 +1812,133 @@ img {
   font-weight: 800;
 }
 
+.kit-pulse .score-section {
+  padding: 40px max(42px, 6%);
+  background:
+    linear-gradient(180deg, #edf7ff 0%, #f7fbff 100%);
+  text-align: center;
+}
+
+.kit-pulse .score-section-header {
+  display: grid;
+  place-items: center;
+  gap: 14px;
+  margin: 0 auto 28px;
+  max-width: 1080px;
+  text-align: center;
+}
+
+.kit-pulse .score-section-header > div:first-child {
+  display: grid;
+  gap: 10px;
+  place-items: center;
+}
+
+.kit-pulse .score-section-header span {
+  display: none;
+}
+
+.kit-pulse .score-section-header h2 {
+  margin: 0;
+  color: var(--brand);
+  font-family: var(--heading);
+  font-size: calc(1.28rem * var(--ui-scale));
+  font-weight: var(--card-weight);
+  line-height: normal;
+  letter-spacing: 0;
+  white-space: pre-line;
+}
+
+.kit-pulse .score-section-header .score-scroll-actions {
+  justify-content: center;
+}
+
+.kit-pulse .match-card-grid {
+  gap: 22px;
+}
+
+.kit-pulse .match-card {
+  min-height: 168px;
+  padding: 22px 18px 20px;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 18px 38px rgba(25, 84, 216, 0.12);
+}
+
+.kit-pulse .match-card time {
+  color: #1954d8;
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.kit-pulse .match-scoreline {
+  grid-template-columns: 54px 1fr 54px;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.kit-pulse .match-scoreline span {
+  width: 54px;
+  height: 54px;
+  border-radius: 20px;
+  background: #edf4ff;
+  box-shadow: inset 0 0 0 1px rgba(25, 84, 216, 0.08);
+  font-size: 1.7rem;
+}
+
+.kit-pulse .match-scoreline strong {
+  color: #14233b;
+  font-family: Inter, "Noto Sans TC", sans-serif;
+  font-size: 1.95rem;
+  font-weight: 800;
+}
+
+.kit-pulse .match-card p {
+  margin: 10px 0 0;
+  color: #14233b;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.kit-pulse .match-card small {
+  color: #526274;
+  font-size: 0.8rem;
+  line-height: 1.35;
+}
+
+.kit-pulse .score-cta,
+.kit-pulse .more-button {
+  display: flex;
+  width: fit-content;
+  min-width: 0;
+  min-height: 0;
+  margin: 28px auto 0;
+  padding: 12px 24px;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 999px;
+  background: #ffe04b;
+  color: #14233b;
+  box-shadow: 0 14px 28px rgba(255, 224, 75, 0.22);
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+.kit-pulse .score-scroll-actions {
+  gap: 10px;
+}
+
+.kit-pulse .score-scroll-actions button {
+  border-color: #1954d8;
+  background: #fff;
+  box-shadow: 0 10px 24px rgba(25, 84, 216, 0.12);
+}
+
+.kit-pulse .score-scroll-actions button svg {
+  color: #1954d8;
+}
+
 .kit-spectrum .score-section-header span {
   color: var(--brand);
   font-size: 0.68rem;
@@ -2777,6 +2904,11 @@ img {
 
 .kit-pulse .taiwan-medal-card {
   border-radius: 24px;
+}
+
+.kit-pulse .taiwan-medal-podium,
+.kit-audi .taiwan-medal-podium {
+  gap: 18px;
 }
 
 .kit-audi .taiwan-medals-section {

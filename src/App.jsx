@@ -29,12 +29,6 @@ const kitStyles = {
     className: "kit-spectrum",
     tone: "柔和、精緻、留白優先",
   },
-  race: {
-    label: "競賽感",
-    kit: "Aalto University kit",
-    className: "kit-aalto",
-    tone: "高對比、賽事節奏、醒目分區",
-  },
 };
 
 const pageTypes = [
@@ -148,7 +142,7 @@ const heroTextControls = [
     visibleField: "showCountdown",
     label: "比賽開始",
     input: "input",
-    placeholder: "YYYY/MM/DD HH:mm，例如 2026/04/30 20:00",
+    placeholder: "YYYY/MM/DD HH:mm，例如 2026/09/19 20:00",
     hint: "支援 YYYY/MM/DD HH:mm 或 YYYY/MM/DD HH:mm:ss，系統會自動換算天、時、分。",
   },
 ];
@@ -722,7 +716,7 @@ function ModuleRenderer({ section, isHomePage, pageTitle, styleKey, onOpenLightb
     const countdown = getCountdownParts(section.countdownTarget, currentTime);
     const heroTitle = isHomePage ? section.title : pageTitle;
     const displayHeroTitle = styleKey === "playful" && isHomePage ? stripHeroSeparators(heroTitle) : heroTitle;
-    const displaySubtitle = isHomePage ? section.subtitle : "杭州亞運會專題";
+    const displaySubtitle = isHomePage ? section.subtitle : "2026 Asian Games";
     const showEyebrow = section.showEyebrow !== false && Boolean(section.eyebrow);
     const showTitle = section.showTitle !== false && Boolean(displayHeroTitle);
     const showSubtitle = section.showSubtitle !== false && Boolean(displaySubtitle);
@@ -752,16 +746,6 @@ function ModuleRenderer({ section, isHomePage, pageTitle, styleKey, onOpenLightb
             </div>
           </aside>
         ) : null}
-        <aside className="race-hero-side" aria-label="競賽感焦點文章">
-          <h3>Recent Post</h3>
-          <img src={imagePool.court} alt="" />
-          <p>Goals that make games really memorable</p>
-        </aside>
-        <div className="race-action-rail" aria-hidden="true">
-          <span>票</span>
-          <span>圖</span>
-          <span>卡</span>
-        </div>
       </div>
     );
   }
@@ -934,6 +918,10 @@ function ModuleRenderer({ section, isHomePage, pageTitle, styleKey, onOpenLightb
   }
 
   if (section.type === "taiwanMedals") {
+    const medalOrder = { silver: 0, gold: 1, bronze: 2 };
+    const orderedItems = [...section.items].sort(
+      (left, right) => (medalOrder[left.tone] ?? 99) - (medalOrder[right.tone] ?? 99),
+    );
     return (
       <div
         className={`content-section taiwan-medals-section ${section.backgroundImage ? "has-custom-bg" : ""}`}
@@ -943,7 +931,7 @@ function ModuleRenderer({ section, isHomePage, pageTitle, styleKey, onOpenLightb
           <SectionTitle title={section.title} />
           <p className="update-note">{section.updatedAt} 更新</p>
           <div className="taiwan-medal-podium">
-            {section.items.map((item) => (
+            {orderedItems.map((item) => (
               <article className={`taiwan-medal-card ${item.tone}`} key={item.label}>
                 {item.image ? (
                   <img className="taiwan-medal-image" src={item.image} alt="" />
@@ -1052,12 +1040,14 @@ function getCountdownParts(targetValue, nowValue) {
 
 function normalizeSection(section) {
   if (section.type === "eventHero") {
+    const normalizedTitle = section.title === "2026亞洲運動會" ? "2026\n亞洲運動會" : section.title;
     return {
       ...section,
+      title: normalizedTitle,
       showEyebrow: section.showEyebrow !== false,
       showTitle: section.showTitle !== false,
       showSubtitle: section.showSubtitle !== false,
-      countdownTarget: section.countdownTarget || "2026/04/30 20:00",
+      countdownTarget: section.countdownTarget || "2026/09/19 20:00",
       backgroundImage: section.backgroundImage || "",
       mobileBackgroundImage: section.mobileBackgroundImage || "",
     };
@@ -1245,7 +1235,7 @@ function EditableField({ field, section, onChange }) {
         />
       ) : (
         <input
-          placeholder={field === "countdownTarget" ? "YYYY/MM/DD HH:mm，例如 2026/04/30 20:00" : undefined}
+          placeholder={field === "countdownTarget" ? "YYYY/MM/DD HH:mm，例如 2026/09/19 20:00" : undefined}
           value={section[field]}
           onChange={(event) => onChange({ [field]: event.target.value })}
         />
@@ -1495,14 +1485,14 @@ function createModule(type, id = `${type}-${Date.now()}`, overrides = {}) {
     eventHero: {
       id,
       type,
-      eyebrow: "19th Asian Games",
+      eyebrow: "2026 Asian Games",
       showEyebrow: true,
-      title: "杭州亞運會",
+      title: "2026\n亞洲運動會",
       showTitle: true,
-      subtitle: "Hangzhou 2022",
+      subtitle: "2026 Asian Games",
       showSubtitle: true,
       showCountdown: true,
-      countdownTarget: "2026/04/30 20:00",
+      countdownTarget: "2026/09/19 20:00",
       backgroundImage: "",
       mobileBackgroundImage: "",
     },
