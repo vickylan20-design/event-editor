@@ -1610,9 +1610,9 @@ function createModule(type, id = `${type}-${Date.now()}`, overrides = {}) {
       updatedAt: "2022-10-02 10:00",
       backgroundImage: "",
       items: [
-        { tone: "gold", icon: "🥇", label: "金牌", shortLabel: "金", count: "6", event: "滑輪溜冰、羽球", image: imagePool.runner },
-        { tone: "silver", icon: "🥈", label: "銀牌", shortLabel: "銀", count: "6", event: "射箭、桌球、柔道", image: imagePool.badminton },
-        { tone: "bronze", icon: "🥉", label: "銅牌", shortLabel: "銅", count: "6", event: "拳擊、跆拳道、空手道", image: imagePool.court },
+        { tone: "gold", icon: "🥇", label: "金牌", shortLabel: "金", count: "6", event: "滑輪溜冰、羽球", image: "" },
+        { tone: "silver", icon: "🥈", label: "銀牌", shortLabel: "銀", count: "6", event: "射箭、桌球、柔道", image: "" },
+        { tone: "bronze", icon: "🥉", label: "銅牌", shortLabel: "銅", count: "6", event: "拳擊、跆拳道、空手道", image: "" },
       ],
     },
     textBlock: {
